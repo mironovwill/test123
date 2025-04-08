@@ -5,3 +5,17 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+.auth
+.network-cache
+
+# Allure
+allure-report/
+allure-results/
+logs/
+test-results/
+
+# Environment variables
+.env
+
+# VSCode
+.vscode

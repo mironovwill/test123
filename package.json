@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky",
+    "pretest": "tsc --noEmit && eslint '{src,tests}/**/*.{ts,tsx}'",
+    "prettier": "prettier --write \"{**/*,*}.{js,ts}\"",
+    "allure:report": "allure generate --clean && allure serve",
+    "allure:clean": "rm -rf allure-report && rm -rf logs && rm -rf allure-results && rm -rf test-results"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
