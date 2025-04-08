@@ -29,3 +29,24 @@ export const cloudAdminProjects: Project[] = [
     dependencies: ['admin-setup'],
   },
 ];
+
+export const cloudUserProjects: Project[] = [
+  {
+    name: 'user-setup',
+    testMatch: ['admin.global.setup.ts'],
+    use: {
+      baseURL: process.env.KAMPUS_ADMIN_BASE_URL,
+    },
+  },
+  {
+    name: 'user-teardown',
+    testMatch: ['global.teardown.ts'],
+    use: {
+      baseURL: process.env.KAMPUS_USER_BASE_URL,
+    },
+  },
+  {
+    name: 'Портал пользователя - Chrome',
+    testDir: './src/tests/user',
+  },
+];

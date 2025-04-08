@@ -2,7 +2,7 @@ import 'dotenv/config';
 import { defineConfig } from '@playwright/test';
 import { resolve } from 'node:path';
 import { allureConfig } from 'src/config/allure.config';
-import { cloudAdminProjects } from 'src/config/cloud/cloud.config';
+import { cloudAdminProjects, cloudUserProjects } from 'src/config/cloud/cloud.config';
 
 const GLOBAL_TIMEOUT = process.env.CI ? 15_000 : 30_000;
 const NAVIGATION_TIMEOUT = process.env.CI ? 30_000 : 60_000;
@@ -36,5 +36,5 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     ignoreHTTPSErrors: true,
   },
-  projects: [...cloudAdminProjects],
+  projects: [...cloudAdminProjects, ...cloudUserProjects],
 });

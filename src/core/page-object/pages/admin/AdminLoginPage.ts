@@ -50,6 +50,12 @@ export class AdminLoginPage extends BasePage {
     await this.loginBtn.click();
   }
 
+  async login(email: string, password: string) {
+    await this.emailInput.fill(email);
+    await this.passwordInput.fill(password);
+    await this.loginBtn.click();
+  }
+
   /**
    * Проверяет текст ошибки на странице.
    * @param errorMessage - Ожидаемый текст ошибки.
