@@ -1,4 +1,4 @@
-import test, { expect, Page } from '@playwright/test';
+import { expect, Page } from '@playwright/test';
 import { BasePage } from './BasePage';
 import { pageContent, successMessages } from '@core/helpers/constants';
 import { Menu, Header, AddEditTopicModal } from '@core/page-object/components/admin';
@@ -184,11 +184,8 @@ export class AdminTopicsPage extends BasePage {
    * @returns Идентификатор топика.
    */
   async getTopicIdFromResponse(page: Page) {
-    await test.step('Получить идентификатор топика из ответа', async () => {
-      const response = await page.waitForResponse(response => response.url().includes('/api/v1/topic'));
-
-      const responseBody = await response.json();
-      return responseBody.id;
-    });
+    const response = await page.waitForResponse(response => response.url().includes('/api/v1/topic'));
+    const responseBody = await response.json();
+    return responseBody.id;
   }
 }
