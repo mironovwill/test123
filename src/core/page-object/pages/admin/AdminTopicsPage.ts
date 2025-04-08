@@ -1,7 +1,7 @@
 import test, { expect, Page } from '@playwright/test';
 import { BasePage } from './BasePage';
 import { pageContent, successMessages } from '@core/helpers/constants';
-import { Menu, Header, EditAddTopicModal } from '@core/page-object/components/admin';
+import { Menu, Header, AddEditTopicModal } from '@core/page-object/components/admin';
 
 export class AdminTopicsPage extends BasePage {
   private readonly h1 = this.page.getByTestId('topicsH1');
@@ -16,7 +16,7 @@ export class AdminTopicsPage extends BasePage {
 
   readonly menu = new Menu(this.page);
   readonly header = new Header(this.page);
-  readonly editAddTopicModal = new EditAddTopicModal(this.page);
+  readonly addEditTopicModal = new AddEditTopicModal(this.page);
 
   constructor(public page: Page) {
     super(page);

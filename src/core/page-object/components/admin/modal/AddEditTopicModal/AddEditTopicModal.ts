@@ -71,7 +71,7 @@ export class AddEditTopicModal {
     await this.modal.shouldBeVisible();
   }
 
-  async fillTopicInfo(topic: Topic) {
+  async createTopic(topic: Topic) {
     await this.fillBasicFields(topic);
     await this.fillAdditionalFields(topic);
 
