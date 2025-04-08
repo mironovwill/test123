@@ -398,7 +398,6 @@ export class BasicFields {
   async validateTopicImage() {
     await this.topicUploadedImage.shouldBeVisible();
     await this.topicUploadedImage.shouldHaveAttribute('src');
-    await this.topicUploadedImage.shouldHaveAttributeValue('src', 'src');
     const src = await this.topicUploadedImage.returnAttributeValue('src');
     expect(src).not.toBeNull();
   }
