@@ -1,5 +1,5 @@
 import { expect, Locator, Page, test } from '@playwright/test';
-import { capitalizeFirstLetter } from '@core/utils';
+import { capitalizeFirstLetter } from '@core/helpers';
 
 export interface ComponentProps {
   page: Page;
