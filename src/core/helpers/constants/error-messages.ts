@@ -3,8 +3,8 @@ export const errorMessages = {
     admin: {
       login: {
         ru: {
-          wrong_email_or_password: 'Неверный логин или пароль',
-          banned_user: 'Пользователь заблокирован',
+          wrongEmailOrPassword: 'Неверный логин или пароль',
+          bannedUser: 'Пользователь заблокирован',
           unauthorized: 'Вы не авторизованы для этого действия',
         },
       },
@@ -12,8 +12,8 @@ export const errorMessages = {
     user: {
       login: {
         ru: {
-          wrong_email_or_password: 'Неверный логин или пароль',
-          banned_user: 'Пользователь заблокирован',
+          wrongEmailOrPassword: 'Неверный логин или пароль',
+          bannedUser: 'Пользователь заблокирован',
           unauthorized: 'Вы не авторизованы для этого действия',
         },
       },
