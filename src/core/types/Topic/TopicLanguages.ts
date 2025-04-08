@@ -1,0 +1,15 @@
+export const enum TopicsLanguages {
+  'RUSSIAN' = 'Русский',
+  'ENGLISH' = 'English',
+  'GERMAN' = 'Deutsch',
+  'FRENCH' = 'Français',
+  'SPANISH' = 'Español',
+  'PORTUGUESE' = 'Português',
+  'ITALIAN' = 'Italiano',
+  'TURKISH' = 'Türkçe',
+  'INDONESIAN' = 'Bahasa',
+  'CHINESE' = '中文',
+  'JAPANESE' = '日本語',
+  'HINDI' = 'हिन्दी',
+  'ARABIC' = 'العربية',
+}

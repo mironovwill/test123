@@ -1,0 +1,17 @@
+export const enum TopicTypes {
+  VIDEO = 'Видео',
+  EXTERNAL_COURSE = 'Внешний курс',
+  BOOK = 'Книга',
+  INFOGRAPHIC = 'Инфографика',
+  CONFERENCE = 'Конференция',
+  CORPORATE_COURSE = 'Корпоративный курс',
+  POLL = 'Опрос',
+  PODCASTS = 'Подкасты',
+  PRACTICAL_TASK = 'Практич. задание',
+  APPLICATION = 'Приложение',
+  EVENT = 'Событие',
+  ARTICLE = 'Статья',
+  TEST = 'Тест',
+  SKILL = 'Навык',
+  E_COURSE = 'Электронный курс',
+}
