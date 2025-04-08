@@ -4,3 +4,4 @@ export * from './TopicCategories';
 export * from './TopicLevels';
 export * from './TopicLanguages';
 export * from './TopicTypes';
+export * from './TopicBlockPlanTypes';

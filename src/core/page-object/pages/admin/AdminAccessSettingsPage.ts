@@ -6,8 +6,8 @@ import { pageContent } from '@core/helpers/constants';
 export class AdminAccessSettingsPage extends BasePage {
   private readonly selectors = {
     H1: this.page.getByTestId('adminAccessSettingsH1'),
-    USER_SETTINGS: this.page.getByTestId('adminAccessSettingsUserManagement'),
-    ROLE_SETTINGS: this.page.getByTestId('adminAccessSettingsRoleSettings'),
+    userSettings: this.page.getByTestId('adminAccessSettingsUserManagement'),
+    roleSettings: this.page.getByTestId('adminAccessSettingsRoleSettings'),
   };
 
   constructor(public page: Page) {
@@ -22,13 +22,13 @@ export class AdminAccessSettingsPage extends BasePage {
 
   readonly userSettingsTab = new Button({
     page: this.page,
-    locator: this.selectors.USER_SETTINGS,
+    locator: this.selectors.userSettings,
     name: 'Управление пользователями',
   });
 
   readonly roleSettingsTab = new Button({
     page: this.page,
-    locator: this.selectors.ROLE_SETTINGS,
+    locator: this.selectors.roleSettings,
     name: 'Настройка ролей',
   });
 

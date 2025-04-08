@@ -17,6 +17,7 @@ export default tseslint.config(
       '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/await-thenable': 'error',
       'playwright/expect-expect': 'off',
+      'playwright/no-conditional-in-test': 'off',
     },
   },
 );

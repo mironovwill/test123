@@ -9,7 +9,7 @@ export interface ComponentProps {
 
 export abstract class Component {
   protected page: Page;
-  protected locator: Locator;
+  locator: Locator;
   private readonly name?: string;
 
   constructor({ page, locator, name }: ComponentProps) {

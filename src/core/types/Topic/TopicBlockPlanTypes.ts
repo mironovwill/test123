@@ -1,4 +1,4 @@
-export const enum BlockPlanTypes {
+export const enum TopicBlockPlanTypes {
   'TEST' = 'Тест',
   'SCORM' = 'SCORM',
   'VIDEO' = 'Видео',
