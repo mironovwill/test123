@@ -23,7 +23,8 @@ test.describe('Базовые тесты портала пользователя
     { tag: ['@Smoke', '@User'] },
     async ({ userCollectionTopicsPage }) => {
       const url = userCollectionTopicsPage.page.url();
-      const pageTitle = url.includes('tandpouble') || url.includes('stage') ? 'LXP Kampus' : 'KAMPUS - DEV';
+      const pageTitle =
+        url.includes('tandpouble') || url.includes('stage') ? 'LXP Kampus' : 'KAMPUS - DEV';
 
       await userCollectionTopicsPage.validatePageTitle(pageTitle);
     },

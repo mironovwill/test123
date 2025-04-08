@@ -188,7 +188,9 @@ export class EventFields {
         .then(classes => classes?.includes('ant-picker-cell-disabled'));
 
       if (isDisabled) {
-        await this.page.getByRole('button', { name: 'Следующий месяц (PageDown)', exact: true }).click();
+        await this.page
+          .getByRole('button', { name: 'Следующий месяц (PageDown)', exact: true })
+          .click();
       }
 
       await element.click();

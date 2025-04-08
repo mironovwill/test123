@@ -31,7 +31,9 @@ export class CreateUserModal {
     userModalPasswordInput: this.page.getByTestId('createUserModalPasswordInput'),
     userModalConfirmPasswordInput: this.page.getByTestId('createUserModalConfirmPasswordInput'),
     userModalRoleSelectInput: this.page.locator('#createUserModalRoleSelect'),
-    userModalRoleSelectResults: this.page.locator('//div[@id="createUserModalRoleSelect_list"]/../div[2]/div/div'),
+    userModalRoleSelectResults: this.page.locator(
+      '//div[@id="createUserModalRoleSelect_list"]/../div[2]/div/div',
+    ),
     userModalDepartmentSelectInput: this.page.locator('#createUserModalDepartmentSelect'),
     userModalDepartmentSelectResults: this.page.locator(
       '//div[@id="createUserModalDepartmentSelect_list"]/../div[2]/div/div',

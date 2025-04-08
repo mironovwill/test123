@@ -76,10 +76,14 @@ export class TestFields {
     allowAnswersCountInput: this.page.getByTestId('allowedCount'),
     timeDatePickerInput: this.page.locator('#adminTopicLearningTestTimeDatepicker'),
     answerType: this.page.getByTestId('responseTypeDropDown'),
-    answerTypeList: this.page.locator('//span[@data-qa="responseTypeDropDown-list"]/div[2]/div/div/div'),
+    answerTypeList: this.page.locator(
+      '//span[@data-qa="responseTypeDropDown-list"]/div[2]/div/div/div',
+    ),
     questionTextarea: this.page.getByTestId('questionTextInput'),
     addMoreAnswerBtn: this.page.getByTestId('adminTopicsLearningTestAddMoreAnswer'),
-    openAnswerHasAttachmentCheckBox: this.page.getByTestId('adminTopicsLearningHasAttachmentCheckbox'),
+    openAnswerHasAttachmentCheckBox: this.page.getByTestId(
+      'adminTopicsLearningHasAttachmentCheckbox',
+    ),
     answersCollapse: this.page.getByTestId('adminLearningTestAnswersCollapse'),
     topicImageCropSubmitBtn: this.page.getByTestId('saveImageBtn'),
     answerInput: (i: number) => `//textarea[@data-qa="answerInput-${i}"]`,
@@ -418,12 +422,16 @@ export class TestFields {
   private async validateBasicTest(answers: BasicAnswer[]) {
     for (const [index, answer] of answers.entries()) {
       await test.step(`Ответ под номером ${index + 1} имеет значением - "${answer.answer}" `, async () => {
-        await expect(this.page.locator(this.selectors.answerInput(index))).toHaveText(answer.answer);
+        await expect(this.page.locator(this.selectors.answerInput(index))).toHaveText(
+          answer.answer,
+        );
       });
 
       if (answer.correct) {
         await test.step(`Значение "${answer.answer}" указано как правильный ответ`, async () => {
-          await expect(this.page.locator(this.selectors.correctAnswerCheckbox(index))).toBeChecked();
+          await expect(
+            this.page.locator(this.selectors.correctAnswerCheckbox(index)),
+          ).toBeChecked();
         });
       }
     }
@@ -433,12 +441,16 @@ export class TestFields {
     for (const [index, answer] of answers.entries()) {
       await test.step(`Проверка соответствия ответа №${index + 1}`, async () => {
         if (!answer.left.image && answer.left.content !== null) {
-          const leftAnswerLocator = this.page.locator(this.selectors.leftAnswerInput(index)).first();
+          const leftAnswerLocator = this.page
+            .locator(this.selectors.leftAnswerInput(index))
+            .first();
           await expect(leftAnswerLocator).toHaveText(answer.left.content as string);
         }
 
         if (!answer.right.image && answer.right.content !== null) {
-          const rightAnswerLocator = this.page.locator(this.selectors.rightAnswerInput(index)).first();
+          const rightAnswerLocator = this.page
+            .locator(this.selectors.rightAnswerInput(index))
+            .first();
           await expect(rightAnswerLocator).toHaveText(answer.right.content as string);
         }
       });

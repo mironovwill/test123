@@ -80,7 +80,12 @@ export class ApiClient {
    * @param statusCode - Ожидаемый статус-код ответа (опционально).
    * @returns Промис с результатом запроса типа R.
    */
-  async post<T, R = T>(path: string, body?: T, headers?: Record<string, string>, statusCode?: number): Promise<R> {
+  async post<T, R = T>(
+    path: string,
+    body?: T,
+    headers?: Record<string, string>,
+    statusCode?: number,
+  ): Promise<R> {
     return this.createRequest<T, R>('post', path, { body, headers, statusCode });
   }
 
@@ -92,7 +97,12 @@ export class ApiClient {
    * @param statusCode - Ожидаемый статус-код ответа (опционально).
    * @returns Промис с результатом запроса типа R.
    */
-  async put<T, R = T>(path: string, body?: T, headers?: Record<string, string>, statusCode?: number): Promise<R> {
+  async put<T, R = T>(
+    path: string,
+    body?: T,
+    headers?: Record<string, string>,
+    statusCode?: number,
+  ): Promise<R> {
     return this.createRequest<T, R>('put', path, { body, headers, statusCode });
   }
 

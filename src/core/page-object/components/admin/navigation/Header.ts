@@ -41,7 +41,10 @@ export class Header {
    */
   async clickRedirectToUserPartBtn({ saveState = false }: { saveState?: boolean } = {}) {
     await test.step(`При нажатии на кнопку "Пользовательская часть" юзер перенаправлен в юзер часть`, async () => {
-      const [newPage] = await Promise.all([this.page.waitForEvent('popup'), this.redirectToUserPartBtn.click()]);
+      const [newPage] = await Promise.all([
+        this.page.waitForEvent('popup'),
+        this.redirectToUserPartBtn.click(),
+      ]);
       const newPageUrl = newPage.url();
       expect.soft(newPageUrl).toContain(process.env.KAMPUS_USER_BASE_URL);
 

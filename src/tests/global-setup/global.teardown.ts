@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { test as teardown } from '@playwright/test';
 import { AdminApiClient } from '@core/api/clients/admin.client';
-import testData from 'src/config/test-data.json';
+import testData from '@test-data';
 
 teardown('admin global teardown', async (): Promise<void> => {
   const adminApiClient = new AdminApiClient();
@@ -22,7 +22,10 @@ teardown('admin global teardown', async (): Promise<void> => {
     await adminApiClient.deleteCertificateById(+testData.structures.certificate.id);
     console.log(`📜➡️🗑️ Сертификат успешно удален`);
   } catch (error) {
-    console.error(`📜❌ Ошибка при удалении сертификата ${testData.structures.certificate.name}:`, error);
+    console.error(
+      `📜❌ Ошибка при удалении сертификата ${testData.structures.certificate.name}:`,
+      error,
+    );
   }
 
   // Удаление награды
@@ -38,7 +41,10 @@ teardown('admin global teardown', async (): Promise<void> => {
     await adminApiClient.deleteDepartmentById(testData.structures.department.id);
     console.log(`🏢➡️🗑️ Департамент успешно удален`);
   } catch (error) {
-    console.error(`🏢❌ Ошибка при удалении департамента ${testData.structures.department.name}:`, error);
+    console.error(
+      `🏢❌ Ошибка при удалении департамента ${testData.structures.department.name}:`,
+      error,
+    );
   }
 
   // Удаление функции

@@ -2,7 +2,15 @@ import { Page, test } from '@playwright/test';
 import { Button, Input, Select, Typography } from '@core/components';
 import { BasePage } from '../BasePage/BasePage';
 import { getFileExtension } from '@core/helpers';
-import { ArticleFields, ChecklistFields, FilesFields, PdfFiles, ScormFields, TestFields, VideoFields } from './fields';
+import {
+  ArticleFields,
+  ChecklistFields,
+  FilesFields,
+  PdfFiles,
+  ScormFields,
+  TestFields,
+  VideoFields,
+} from './fields';
 import { Chapters } from './chapters/Chapters';
 import { TopicBlockPlanTypes } from '@core/types';
 
@@ -10,8 +18,12 @@ export class AdminTopicLearningPage extends BasePage {
   private readonly selectors = {
     topicLearningAddLearning: this.page.getByTestId('adminTopicsLearningAddLearning'),
     topicLearningAddModalNameInput: this.page.getByTestId('adminTopicsLearningAddModalNameInput'),
-    topicLearningAddModalBlockTypeSelect: this.page.getByTestId('adminTopicsLearningAddModalBlockTypeSelect'),
-    topicLearningAddModalBlockTypeList: this.page.locator('//span[@data-qa="addBlockSelect-list"]/div[2]/div/div/div'),
+    topicLearningAddModalBlockTypeSelect: this.page.getByTestId(
+      'adminTopicsLearningAddModalBlockTypeSelect',
+    ),
+    topicLearningAddModalBlockTypeList: this.page.locator(
+      '//span[@data-qa="addBlockSelect-list"]/div[2]/div/div/div',
+    ),
     topicLearningAddModalSubmit: this.page.getByTestId('adminTopicsLearningAddModalSubmit'),
     topicLearningFileValue: this.page.getByTestId('adminLearningFileName'),
   };

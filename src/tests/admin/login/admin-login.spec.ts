@@ -2,8 +2,8 @@ import 'dotenv/config';
 import { test as base } from '@playwright/test';
 import { AdminLoginPage, AdminTopicsPage } from '@core/page-object/pages/admin';
 import { epic, feature, parameter } from 'allure-js-commons';
-import testData from 'src/config/test-data.json';
 import { errorMessages } from '@core/helpers/constants';
+import testData from '@test-data';
 
 interface LoginFixtures {
   adminLoginPage: AdminLoginPage;

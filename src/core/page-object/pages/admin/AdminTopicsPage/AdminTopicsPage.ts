@@ -91,7 +91,9 @@ export class AdminTopicsPage extends BasePage {
    */
   async validateSuccessNotification() {
     await this.notification.shouldBeVisible();
-    await this.notification.shouldHaveText(successMessages.cloud.admin.notifications.ru.topicsCreate);
+    await this.notification.shouldHaveText(
+      successMessages.cloud.admin.notifications.ru.topicsCreate,
+    );
   }
 
   /**
@@ -108,7 +110,9 @@ export class AdminTopicsPage extends BasePage {
    */
   async validateTopicDeleteSuccessNotification() {
     await this.notification.shouldBeVisible();
-    await this.notification.shouldHaveText(successMessages.cloud.admin.notifications.ru.topicDelete);
+    await this.notification.shouldHaveText(
+      successMessages.cloud.admin.notifications.ru.topicDelete,
+    );
   }
 
   /**
@@ -184,7 +188,9 @@ export class AdminTopicsPage extends BasePage {
    * @returns Идентификатор топика.
    */
   async getTopicIdFromResponse(page: Page) {
-    const response = await page.waitForResponse(response => response.url().includes('/api/v1/topic'));
+    const response = await page.waitForResponse(response =>
+      response.url().includes('/api/v1/topic'),
+    );
     const responseBody = await response.json();
     return responseBody.id;
   }

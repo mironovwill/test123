@@ -1,6 +1,10 @@
 import { Page, test } from '@playwright/test';
 import { AdminApiClient } from '@core/api/clients/admin.client';
-import { AdminProfileSettingPage, AdminTopicsPage, AdminTopicPage } from '@core/page-object/pages/admin';
+import {
+  AdminProfileSettingPage,
+  AdminTopicsPage,
+  AdminTopicPage,
+} from '@core/page-object/pages/admin';
 import { CacheRoute } from 'playwright-network-cache';
 
 export interface AdminPagesFixture {
@@ -18,15 +22,24 @@ export const adminPagesFixture = {
     const adminApiClient = new AdminApiClient();
     await use(adminApiClient);
   },
-  adminTopicPage: async ({ page }: { page: Page }, use: (page: AdminTopicPage) => Promise<void>) => {
+  adminTopicPage: async (
+    { page }: { page: Page },
+    use: (page: AdminTopicPage) => Promise<void>,
+  ) => {
     const adminTopicPage = new AdminTopicPage(page);
     await use(adminTopicPage);
   },
-  adminProfileSettingPage: async ({ page }: { page: Page }, use: (page: AdminProfileSettingPage) => Promise<void>) => {
+  adminProfileSettingPage: async (
+    { page }: { page: Page },
+    use: (page: AdminProfileSettingPage) => Promise<void>,
+  ) => {
     const adminProfileSettingPage = new AdminProfileSettingPage(page);
     await use(adminProfileSettingPage);
   },
-  adminTopicsPage: async ({ page }: { page: Page }, use: (page: AdminTopicsPage) => Promise<void>) => {
+  adminTopicsPage: async (
+    { page }: { page: Page },
+    use: (page: AdminTopicsPage) => Promise<void>,
+  ) => {
     const adminTopicsPage = new AdminTopicsPage(page);
     await use(adminTopicsPage);
   },
@@ -43,7 +56,9 @@ export const adminPagesFixture = {
           .map((error, index) => {
             const header = `🚨 Ошибка #${index + 1} (${new Date().toLocaleTimeString()})`;
             const message = `📝 Сообщение: ${error.message || 'Нет описания'}`;
-            const stackTrace = error.stack ? `🔍 Stack Trace:\n${error.stack}` : 'ℹ️ Stack Trace не доступен';
+            const stackTrace = error.stack
+              ? `🔍 Stack Trace:\n${error.stack}`
+              : 'ℹ️ Stack Trace не доступен';
 
             return `${header}\n${message}\n${stackTrace}\n${'-'.repeat(60)}`;
           })

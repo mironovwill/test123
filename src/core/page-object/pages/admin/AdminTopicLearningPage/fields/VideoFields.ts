@@ -5,7 +5,9 @@ export class VideoFields {
   private readonly selectors = {
     topicLearningVideoInput: this.page.locator('//input[@accept="mp4"]'),
     topicLearningVideoCoverInput: this.page.getByTestId('adminTopicsLearningVideoCoverInput'),
-    topicLearningVideoCoverImage: this.page.locator('//input[@data-qa="blockImage"]/../div/div/span/img'),
+    topicLearningVideoCoverImage: this.page.locator(
+      '//input[@data-qa="blockImage"]/../div/div/span/img',
+    ),
     topicLearningVideoCoverSaveBtn: this.page.getByTestId('adminTopicsLearningVideoCoverSaveBtn'),
   };
 

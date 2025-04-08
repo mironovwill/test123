@@ -89,7 +89,10 @@ export abstract class Component {
    */
   async shouldHaveText(text: string): Promise<void> {
     await test.step(`${this.typeOfUpper} "${this.componentName}" должен(а) иметь значение - "${text}"`, async () => {
-      await expect(this.locator, this.getErrorMessage(`Не имеет значение - "${text}"`)).toContainText(text);
+      await expect(
+        this.locator,
+        this.getErrorMessage(`Не имеет значение - "${text}"`),
+      ).toContainText(text);
     });
   }
 
@@ -99,7 +102,10 @@ export abstract class Component {
    */
   async shouldHaveValue(value: string): Promise<void> {
     await test.step(`${this.typeOfUpper} "${this.componentName}" должен(а) иметь значение - "${value}"`, async () => {
-      await expect(this.locator, this.getErrorMessage(`Не имеет значение - "${value}"`)).toHaveValue(value);
+      await expect(
+        this.locator,
+        this.getErrorMessage(`Не имеет значение - "${value}"`),
+      ).toHaveValue(value);
     });
   }
 

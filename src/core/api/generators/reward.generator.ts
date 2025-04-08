@@ -9,7 +9,10 @@ import { RewardDto } from '../types';
  * @param imageUuid - Уникальный идентификатор изображения награды (по умолчанию 'image').
  * @returns Объект с данными награды.
  */
-export const rewardGenerator = (action: string = 'TOPIC_FINISH', imageUuid: string = 'image'): RewardDto => {
+export const rewardGenerator = (
+  action: string = 'TOPIC_FINISH',
+  imageUuid: string = 'image',
+): RewardDto => {
   return {
     name: `${faker.commerce.product()}${faker.string.numeric(20)}`,
     action,

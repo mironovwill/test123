@@ -390,7 +390,9 @@ export class AdminTopicPage extends BasePage {
   }
 
   async validateTopicInternalUseText() {
-    await this.topicInternalUseText.shouldHaveText(pageContent.cloud.admin.topic.ru.topicInternalUse);
+    await this.topicInternalUseText.shouldHaveText(
+      pageContent.cloud.admin.topic.ru.topicInternalUse,
+    );
   }
 
   async validateMeetPlace(meetPlace: string) {
@@ -406,7 +408,10 @@ export class AdminTopicPage extends BasePage {
   }
 
   async clickTopicViewTopicBtn(topicId: string) {
-    const [newPage] = await Promise.all([this.page.waitForEvent('popup'), this.topicViewTopicBtn.click()]);
+    const [newPage] = await Promise.all([
+      this.page.waitForEvent('popup'),
+      this.topicViewTopicBtn.click(),
+    ]);
     const newPageUrl = newPage.url();
     expect(newPageUrl).toEqual(`${process.env.KAMPUS_USER_BASE_URL}/collection-topics/${topicId}`);
     await newPage.close();

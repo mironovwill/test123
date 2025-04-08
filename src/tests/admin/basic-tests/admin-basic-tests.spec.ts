@@ -28,12 +28,17 @@ test.describe('Базовые тесты админ панели', () => {
     },
   );
 
-  test('Проверка title в админ панели @allure.id=165', { tag: ['@Smoke', '@Admin'] }, async ({ adminTopicsPage }) => {
-    const url = adminTopicsPage.page.url();
-    const pageTitle = url.includes('tandpouble') || url.includes('stage') ? 'LXP Kampus' : 'KAMPUS - DEV';
+  test(
+    'Проверка title в админ панели @allure.id=165',
+    { tag: ['@Smoke', '@Admin'] },
+    async ({ adminTopicsPage }) => {
+      const url = adminTopicsPage.page.url();
+      const pageTitle =
+        url.includes('tandpouble') || url.includes('stage') ? 'LXP Kampus' : 'KAMPUS - DEV';
 
-    await adminTopicsPage.validatePageTitle(pageTitle);
-  });
+      await adminTopicsPage.validatePageTitle(pageTitle);
+    },
+  );
 
   test(
     'Проверка отображения helpdesk кнопки в админ панели @allure.id=166',

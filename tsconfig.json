@@ -5,6 +5,7 @@
     "baseUrl": ".",
     "paths": {
       "@core/*": ["src/core/*"],
+      "@test-data": ["src/config/test-data.json"]
     },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

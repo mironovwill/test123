@@ -7,7 +7,9 @@ export class Header {
     headerUserDropdownExitBtn: this.page.locator(
       '//li[@id="headerUserDropdownMenuExitBtn"][@class="ant-dropdown-menu-item"]',
     ),
-    headerUserDropdownAdminBtn: this.page.locator('//li[@id="headerLoginToAdminBtn"][@class="ant-dropdown-menu-item"]'),
+    headerUserDropdownAdminBtn: this.page.locator(
+      '//li[@id="headerLoginToAdminBtn"][@class="ant-dropdown-menu-item"]',
+    ),
   };
 
   private readonly headerBlockMenu = new Button({
@@ -34,9 +36,14 @@ export class Header {
     await test.step('Перейти в портал администратора', async () => {
       await this.headerBlockMenu.click();
 
-      const [newPage] = await Promise.all([this.page.waitForEvent('popup'), this.headerUserDropdownAdminBtn.click()]);
+      const [newPage] = await Promise.all([
+        this.page.waitForEvent('popup'),
+        this.headerUserDropdownAdminBtn.click(),
+      ]);
 
-      await newPage.waitForURL(`${process.env.KAMPUS_ADMIN_BASE_URL}`, { waitUntil: 'domcontentloaded' });
+      await newPage.waitForURL(`${process.env.KAMPUS_ADMIN_BASE_URL}`, {
+        waitUntil: 'domcontentloaded',
+      });
       expect(newPage.url()).toEqual(`${process.env.KAMPUS_ADMIN_BASE_URL}/`);
       await newPage.close();
     });

@@ -13,7 +13,9 @@ export class UserPersonalInfoModal {
     userPersonalInfoModalMainCompany: this.page.getByTestId('userPersonalInfoModalMainCompany'),
     userPersonalInfoModalCompany: this.page.getByTestId('userPersonalInfoModalCompany'),
     userPersonalInfoModalManager: this.page.getByTestId('userPersonalInfoModalManager'),
-    userPersonalInfoModalFunction: this.page.locator('//div[@data-qa="userPersonalInfoModalFunction"]/div[2]/div'),
+    userPersonalInfoModalFunction: this.page.locator(
+      '//div[@data-qa="userPersonalInfoModalFunction"]/div[2]/div',
+    ),
   };
 
   private readonly userPersonalInfoModal = new Typography({

@@ -3,7 +3,7 @@ import { test as base } from '@playwright/test';
 import { UserCollectionTopicsPage, UserLoginPage } from '@core/page-object/pages/user';
 import { epic, feature, parameter } from 'allure-js-commons';
 import { errorMessages } from '@core/helpers/constants';
-import testData from 'src/config/test-data.json';
+import testData from '@test-data';
 
 const testUsers = {
   banned: testData.users.bannedUser,

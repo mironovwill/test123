@@ -1,6 +1,13 @@
 import { Page } from '@playwright/test';
 import { Button, Modal } from '@core/components';
-import { BadgeFields, BasicFields, BookFields, CertificateFields, ECourseFields, EventFields } from './fields';
+import {
+  BadgeFields,
+  BasicFields,
+  BookFields,
+  CertificateFields,
+  ECourseFields,
+  EventFields,
+} from './fields';
 import {
   ApplicationTopic,
   ArticleTopic,
@@ -107,7 +114,14 @@ export class AddEditTopicModal {
     await this.clickSubmitBtn();
   }
 
-  private async fillBasicFields({ topicName, eventCheckbox, approveCheckbox, topicType, description, image }: Topic) {
+  private async fillBasicFields({
+    topicName,
+    eventCheckbox,
+    approveCheckbox,
+    topicType,
+    description,
+    image,
+  }: Topic) {
     await this.basicFields.fillTopicName(topicName);
     await this.basicFields.selectTopicType(topicType);
     if (eventCheckbox) await this.basicFields.checkEventCheckbox();
@@ -140,8 +154,10 @@ export class AddEditTopicModal {
     await this.certificateFields.checkHasCertificateCheckbox();
     await this.certificateFields.selectCertificate(certificateName!);
     if (certificateSeries) await this.certificateFields.fillCertificateSeries(certificateSeries);
-    if (certificateNumbersMin) await this.certificateFields.fillCertificateNumbersMin(certificateNumbersMin);
-    if (certificateNumbersMax) await this.certificateFields.fillCertificateNumbersMax(certificateNumbersMax);
+    if (certificateNumbersMin)
+      await this.certificateFields.fillCertificateNumbersMin(certificateNumbersMin);
+    if (certificateNumbersMax)
+      await this.certificateFields.fillCertificateNumbersMax(certificateNumbersMax);
   }
 
   private async fillBadgeDetails({ badgeName }: Topic) {
@@ -210,7 +226,8 @@ export class AddEditTopicModal {
   }: ECourseTopic) {
     if (authors) await this.basicFields.fillAuthorInput(authors);
     if (period) await this.eventFields.selectPeriodInput(period);
-    if (startTimeH && startTimeM) await this.eCourseFields.fillStartTimeInputs(startTimeH, startTimeM);
+    if (startTimeH && startTimeM)
+      await this.eCourseFields.fillStartTimeInputs(startTimeH, startTimeM);
     if (durationH) await this.basicFields.fillHoursInput(durationH);
     if (durationM) await this.basicFields.fillMinutesInput(durationM);
     if (company) await this.basicFields.fillCompanyInput(company);
@@ -247,7 +264,8 @@ export class AddEditTopicModal {
 
     if (corpAccessCheckbox) {
       if (eventName) await this.eventFields.fillEventName(eventName);
-      if (responsiblePersons) await this.eventFields.fillResponsiblePersonsInput(responsiblePersons);
+      if (responsiblePersons)
+        await this.eventFields.fillResponsiblePersonsInput(responsiblePersons);
     }
 
     if (platform === 'МТС ЛИНК') {
@@ -271,7 +289,12 @@ export class AddEditTopicModal {
     if (durationM) await this.basicFields.fillMinutesInput(durationM);
   }
 
-  private async fillFourTopicTypeDetails({ authors, company, durationH, durationM }: VideoTopic | PodcastTopic) {
+  private async fillFourTopicTypeDetails({
+    authors,
+    company,
+    durationH,
+    durationM,
+  }: VideoTopic | PodcastTopic) {
     if (authors) await this.basicFields.fillAuthorInput(authors);
     if (company) await this.basicFields.fillCompanyInput(company);
     if (durationH) await this.basicFields.fillHoursInput(durationH);
