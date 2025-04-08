@@ -16,13 +16,14 @@ setup('admin global setup', async ({ page }): Promise<void> => {
     );
   }
 
-  // Авторизация в приложении
+  // Авторизация в портал администратора
   const adminLoginPage = new AdminLoginPage(page);
   const adminTopicsPage = new AdminTopicsPage(page);
 
-  await adminLoginPage.visit(KAMPUS_ADMIN_BASE_URL);
+  await adminLoginPage.visit('/');
   await adminLoginPage.login(TEST_USER_SUPERADMIN_EMAIL, TEST_USER_PASSWORD);
   await adminTopicsPage.validateH1Text();
+  await adminTopicsPage.header.clickRedirectToUserPartBtn({ saveState: true });
 
   // Получение и сохранение токена
   const token = await adminTopicsPage.page.evaluate(() => {
@@ -35,7 +36,7 @@ setup('admin global setup', async ({ page }): Promise<void> => {
 
   process.env.BEARER_TOKEN = token;
 
-  // Сохранение состояния авторизации
+  // Сохранение состояния авторизации в портал администратора
   await page.context().storageState({ path: '.auth/admin.json' });
 
   await prepareTestData();

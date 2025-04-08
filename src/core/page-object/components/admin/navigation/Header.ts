@@ -39,11 +39,18 @@ export class Header {
    * Нажимает на кнопку "Пользовательская часть"
    * @returns {Promise<void>}
    */
-  async clickRedirectToUserPartBtn() {
+  async clickRedirectToUserPartBtn({ saveState = false }: { saveState?: boolean } = {}) {
     await test.step(`При нажатии на кнопку "Пользовательская часть" юзер перенаправлен в юзер часть`, async () => {
       const [newPage] = await Promise.all([this.page.waitForEvent('popup'), this.redirectToUserPartBtn.click()]);
       const newPageUrl = newPage.url();
       expect.soft(newPageUrl).toContain(process.env.KAMPUS_USER_BASE_URL);
+
+      if (saveState) {
+        await newPage.getByTestId('userCollectionTopicH1').waitFor({ state: 'visible' });
+        await newPage.context().storageState({ path: '.auth/user.json' });
+      }
+
+      await newPage.close();
     });
   }
 }

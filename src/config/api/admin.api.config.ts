@@ -1,7 +1,5 @@
-const apiBaseUrl = `${process.env.KAMPUS_ADMIN_BASE_URL}/${process.env.API_PREFIX}/${process.env.API_VERSION}`;
-
 const adminApiConfig = {
-  baseUrl: apiBaseUrl,
+  baseUrl: `${process.env.KAMPUS_ADMIN_BASE_URL}/${process.env.API_PREFIX}/${process.env.API_VERSION}`,
   endpoints: {
     auth: {
       register: '/register/any',
