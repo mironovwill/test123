@@ -1,21 +1,15 @@
 import 'dotenv/config';
 import { devices, Project } from '@playwright/test';
 
-export const cloudAdminProjects: Project[] = [
+const cloudAdminProjects: Project[] = [
   {
-    name: 'admin-setup',
-    testMatch: ['admin.global.setup.ts'],
-    teardown: 'admin-teardown',
-    use: {
-      baseURL: process.env.KAMPUS_ADMIN_BASE_URL,
-    },
+    testMatch: ['global.setup.ts'],
+    teardown: 'global-teardown',
+    name: 'global-setup',
   },
   {
-    name: 'admin-teardown',
+    name: 'global-teardown',
     testMatch: ['global.teardown.ts'],
-    use: {
-      baseURL: process.env.KAMPUS_ADMIN_BASE_URL,
-    },
   },
   {
     name: 'Портал администратора - Chrome',
@@ -26,27 +20,18 @@ export const cloudAdminProjects: Project[] = [
       baseURL: process.env.KAMPUS_ADMIN_BASE_URL,
       ...devices['Desktop Chrome'],
     },
-    dependencies: ['admin-setup'],
-  },
-];
-
-export const cloudUserProjects: Project[] = [
-  {
-    name: 'user-setup',
-    testMatch: ['admin.global.setup.ts'],
-    use: {
-      baseURL: process.env.KAMPUS_ADMIN_BASE_URL,
-    },
-  },
-  {
-    name: 'user-teardown',
-    testMatch: ['global.teardown.ts'],
-    use: {
-      baseURL: process.env.KAMPUS_USER_BASE_URL,
-    },
+    dependencies: ['global-setup'],
   },
   {
     name: 'Портал пользователя - Chrome',
     testDir: './src/tests/user',
+    use: {
+      baseURL: process.env.KAMPUS_USER_BASE_URL,
+      storageState: '.auth/user.json',
+      ...devices['Desktop Chrome'],
+    },
+    dependencies: ['global-setup'],
   },
 ];
+
+export const cloudGlobalProjects: Project[] = [...cloudAdminProjects];

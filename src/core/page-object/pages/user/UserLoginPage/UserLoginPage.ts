@@ -1,7 +1,6 @@
 import { Page, test } from '@playwright/test';
 import { Button, Input, Span } from '@core/components';
 import { BasePage } from '../BasePage/BasePage';
-import { errorMessages } from '@core/helpers/constants';
 
 export class UserLoginPage extends BasePage {
   private readonly selectors = {
@@ -91,12 +90,8 @@ export class UserLoginPage extends BasePage {
   //    ║ VALIDATIONS                                              ║
   //    ╚══════════════════════════════════════════════════════════╝
 
-  async validateInvalidLoginError() {
-    await this.errorSpan.shouldHaveText(errorMessages.cloud.user.login.ru.wrongEmailOrPassword);
-  }
-
-  async validateBannedUserLoginError() {
-    await this.errorSpan.shouldHaveText(errorMessages.cloud.user.login.ru.bannedUser);
+  async validateError(errorMessage: string) {
+    await this.errorSpan.shouldHaveText(errorMessage);
   }
 
   async validateLoginPageUrl() {
