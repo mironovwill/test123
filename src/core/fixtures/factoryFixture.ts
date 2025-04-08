@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 import { AdminTopicsPage } from '@core/page-object/pages/admin';
-import { Topic } from '@core/types/Topic';
+import { Topic } from '@core/types';
 import { AdminApiClient } from '@core/api/clients/admin.client';
 
 export interface TopicFactoryFixture {

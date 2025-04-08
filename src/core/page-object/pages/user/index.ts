@@ -1,3 +1,3 @@
-export * from './BasePage';
-export * from './UserLoginPage';
-export * from './UserCollectionTopicsPage';
+export * from './BasePage/BasePage';
+export * from './UserLoginPage/UserLoginPage';
+export * from './UserCollectionTopicsPage/UserCollectionTopicsPage';

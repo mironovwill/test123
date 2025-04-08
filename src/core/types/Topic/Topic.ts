@@ -1,4 +1,4 @@
-import { TopicCategories, TopicLevels, TopicTypes, TopicsLanguages } from '@core/types/Topic';
+import { TopicCategories, TopicLevels, TopicTypes, TopicsLanguages } from '@core/types';
 
 export type BaseTopic = {
   topicName: string;

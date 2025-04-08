@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
 import { Typography, Button, Input } from '@core/components';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { pageContent } from '@core/helpers/constants';
 import { UserPersonalInfoModal, CreateUserModal } from '@core/page-object/components/admin';
 

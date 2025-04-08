@@ -1,10 +1,10 @@
 import { Page, test } from '@playwright/test';
 import { Button, Input, Select, Typography } from '@core/components';
-import { BasePage } from '../BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { getFileExtension } from '@core/helpers';
 import { ArticleFields, ChecklistFields, FilesFields, PdfFiles, ScormFields, TestFields, VideoFields } from './fields';
 import { Chapters } from './chapters/Chapters';
-import { TopicBlockPlanTypes } from '@core/types/Topic';
+import { TopicBlockPlanTypes } from '@core/types';
 
 export class AdminTopicLearningPage extends BasePage {
   private readonly selectors = {

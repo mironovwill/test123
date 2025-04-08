@@ -1,6 +1,6 @@
 import { Page, test } from '@playwright/test';
 import { Button, Input, Span } from '@core/components';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { errorMessages } from '@core/helpers/constants';
 
 export class UserLoginPage extends BasePage {

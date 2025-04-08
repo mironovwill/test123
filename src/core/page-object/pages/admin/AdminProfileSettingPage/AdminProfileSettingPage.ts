@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { Select, Span } from '@core/components';
 
 export class AdminProfileSettingPage extends BasePage {

@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 import { Input, Button, Span } from '@core/components';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 
 export class AdminLoginPage extends BasePage {
   private readonly selectors = {

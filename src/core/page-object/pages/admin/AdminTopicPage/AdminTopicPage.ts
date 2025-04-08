@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
-import { BasePage } from './BasePage';
-import { Topic } from '@core/types/Topic';
+import { BasePage } from '../BasePage/BasePage';
+import { Topic } from '@core/types';
 import { pageContent } from '@core/helpers/constants';
 import { Button, Input, Modal, Typography, Select } from '@core/components';
 import { AddEditTopicModal } from '@core/page-object/components/admin';

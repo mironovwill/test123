@@ -1,5 +1,5 @@
 import { expect, Page } from '@playwright/test';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { pageContent, successMessages } from '@core/helpers/constants';
 import { Menu, Header, AddEditTopicModal } from '@core/page-object/components/admin';
 import { Input, Typography, Button, Link, Notification } from '@core/components';

@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 import { Typography, Button } from '@core/components';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { pageContent } from '@core/helpers/constants';
 
 export class AdminTracksPage extends BasePage {

@@ -16,7 +16,7 @@ import {
   Topic,
   TopicTypes,
   VideoTopic,
-} from '@core/types/Topic';
+} from '@core/types';
 
 export class AddEditTopicModal {
   readonly basicFields: BasicFields;

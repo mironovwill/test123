@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { expect, Page, test } from '@playwright/test';
 import { Button, Checkbox, Input, Select } from '@core/components';
-import { TopicBlockPlanTypes } from '@core/types/Topic';
+import { TopicBlockPlanTypes } from '@core/types';
 
 export const enum AnswerTypes {
   OneAnswer = 'Один вариант ответа',

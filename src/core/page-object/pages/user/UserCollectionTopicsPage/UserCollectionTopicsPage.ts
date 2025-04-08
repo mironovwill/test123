@@ -1,5 +1,5 @@
 import { Page, test } from '@playwright/test';
-import { BasePage } from './BasePage';
+import { BasePage } from '../BasePage/BasePage';
 import { Typography } from '@core/components';
 import { pageContent } from '@core/helpers/constants';
 import { Header } from '@core/page-object/components/user';
