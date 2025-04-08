@@ -1,13 +1,6 @@
 import { Page } from '@playwright/test';
 import { Button, Modal } from '@core/components';
-import {
-  BadgeFields,
-  BasicFields,
-  BookFields,
-  CertificateFields,
-  ECourseFields,
-  EventFields,
-} from './fields';
+import { BadgeFields, BasicFields, BookFields, CertificateFields, ECourseFields, EventFields } from './fields';
 
 export class EditAddTopicModal {
   readonly basicFields: BasicFields;
