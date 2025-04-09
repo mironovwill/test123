@@ -10,13 +10,16 @@ const EXPECT_TIMEOUT = process.env.CI ? 10_000 : 20_000;
 const RETRIES = process.env.CI ? 2 : 0;
 
 const reportDir = resolve(__dirname, 'src/report');
+const wsEndpoint = `wss://moon.k-ampus.dev/playwright/chromium/playwright-1.51.0?headless=false&enableVideo=true`;
 
 export default defineConfig({
+  globalSetup: require.resolve('./src/tests/global-setup/global.setup'),
+  globalTeardown: require.resolve('./src/tests/global-setup/global.teardown'),
   testDir: './src/tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: RETRIES,
-  workers: 1,
+  workers: 4,
   outputDir: `${reportDir}/test-results`,
   timeout: GLOBAL_TIMEOUT,
   expect: {
@@ -35,6 +38,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     headless: false,
+    connectOptions: { wsEndpoint },
   },
   projects: [...cloudGlobalProjects],
 });

@@ -47,6 +47,7 @@ export class ApiClient {
       extraHTTPHeaders: {
         Authorization: process.env.BEARER_TOKEN!,
       },
+      ignoreHTTPSErrors: true,
     });
 
     const requestOptions = {

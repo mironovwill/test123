@@ -1,9 +1,8 @@
 import 'dotenv/config';
-import { test as teardown } from '@playwright/test';
 import { AdminApiClient } from '@core/api/clients/admin.client';
 import testData from '@test-data';
 
-teardown('admin global teardown', async (): Promise<void> => {
+export default async function globalTeardown() {
   const adminApiClient = new AdminApiClient();
 
   // Удаление пользователей
@@ -62,4 +61,4 @@ teardown('admin global teardown', async (): Promise<void> => {
   } catch (error) {
     console.error(`👨💻❌ Ошибка при удалении автора:`, error);
   }
-});
+}
