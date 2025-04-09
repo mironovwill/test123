@@ -30,7 +30,7 @@ export const certificateGenerator = (
   } = options;
 
   return {
-    name: faker.lorem.word({ length: { min: 5, max: 10 } }),
+    name: faker.lorem.word({ length: { min: 5, max: 100 } }),
     templateId,
     type,
     confirmText,

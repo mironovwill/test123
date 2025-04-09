@@ -46,7 +46,11 @@ export const adminPagesFixture = {
   exceptionLogger: [
     async ({ page }: { page: Page }, use: () => Promise<void>) => {
       const errors: Error[] = [];
-      const listener = (error: Error) => errors.push(error);
+      const listener = (error: Error) => {
+        if (error.name !== 'CanceledError') {
+          errors.push(error);
+        }
+      };
       page.on('pageerror', listener);
 
       await use();

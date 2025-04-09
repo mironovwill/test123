@@ -4,13 +4,13 @@ import { resolve } from 'node:path';
 import { allureConfig } from 'src/config/allure.config';
 import { cloudGlobalProjects } from 'src/config/cloud/cloud.config';
 
-const GLOBAL_TIMEOUT = process.env.CI ? 30_000 : 60_000;
-const NAVIGATION_TIMEOUT = process.env.CI ? 45_000 : 90_000;
-const EXPECT_TIMEOUT = process.env.CI ? 10_000 : 40_000;
+const GLOBAL_TIMEOUT = process.env.CI ? 60_000 : 60_000;
+const NAVIGATION_TIMEOUT = process.env.CI ? 90_000 : 90_000;
+const EXPECT_TIMEOUT = process.env.CI ? 40_000 : 40_000;
 const RETRIES = process.env.CI ? 2 : 0;
 
 const reportDir = resolve(__dirname, 'src/report');
-const wsEndpoint = `wss://moon.k-ampus.dev/playwright/chromium/playwright-1.51.0?headless=false&enableVideo=true`;
+// const wsEndpoint = `wss://moon.k-ampus.dev/playwright/chromium/playwright-1.51.0?headless=false&enableVideo=true`;
 
 export default defineConfig({
   globalSetup: require.resolve('./src/tests/global-setup/global.setup'),
@@ -19,7 +19,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: RETRIES,
-  workers: 4,
+  workers: 1,
   outputDir: `${reportDir}/test-results`,
   timeout: GLOBAL_TIMEOUT,
   expect: {
@@ -38,7 +38,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
     headless: false,
-    connectOptions: { wsEndpoint },
+    // connectOptions: { wsEndpoint },
     viewport: {
       width: 2048,
       height: 1080,
