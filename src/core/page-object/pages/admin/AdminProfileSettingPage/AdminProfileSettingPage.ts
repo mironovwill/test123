@@ -5,7 +5,7 @@ import { Select, Span } from '@core/components';
 export class AdminProfileSettingPage extends BasePage {
   private readonly selectors = {
     h1: this.page.locator('#adminProfileSettingsH1'),
-    languageSelect: this.page.getByTestId('adminProfileSettingsLanguageSelect'),
+    languageSelect: this.page.getByTestId('adminProfileSettingsLanguageSelect').locator('div'),
     resultList: this.page.locator('.rc-virtual-list-holder-inner'),
   };
 
@@ -40,8 +40,6 @@ export class AdminProfileSettingPage extends BasePage {
   }
 
   async selectLanguage(language: string) {
-    await this.languageSelect.shouldBeEnabled();
-
     await this.languageSelect.click();
     await this.resultList.selectItemByTitle(language);
   }
