@@ -144,7 +144,8 @@ export abstract class Component {
    * @returns Значение атрибута или null, если атрибут не найден
    */
   async returnAttributeValue(attribute: string): Promise<string | null> {
-    return await this.locator.getAttribute(attribute);
+    const attr = await this.locator.getAttribute(attribute);
+    return attr;
   }
 
   /**

@@ -6,7 +6,7 @@ export class CertificateFields {
     certificateSeriesInput: this.page.getByTestId('certificateSeries'),
     certificateNumbersMinInput: this.page.getByTestId('certificateNumbersMin'),
     certificateNumbersMaxInput: this.page.getByTestId('certificateNumbersMax'),
-    certificateInput: this.page.locator('[data-qa="certificateId"] > div'),
+    certificateInput: this.page.locator('[data-qa="certificateId"]').locator('div'),
     hasCertificateCheckbox: this.page.getByTestId('hasCertificate'),
     certificateOptionsContainer: this.page.locator('.rc-virtual-list-holder-inner'),
   };

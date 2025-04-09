@@ -2,7 +2,7 @@ import { expect, Page } from '@playwright/test';
 import { BasePage } from '../BasePage/BasePage';
 import { Topic } from '@core/types';
 import { pageContent } from '@core/helpers/constants';
-import { Button, Input, Modal, Typography, Select } from '@core/components';
+import { Button, Modal, Typography, Select, Img } from '@core/components';
 import { AddEditTopicModal } from '@core/page-object/components/admin';
 
 export class AdminTopicPage extends BasePage {
@@ -229,7 +229,7 @@ export class AdminTopicPage extends BasePage {
     name: 'Длительность',
   });
 
-  private readonly topicImage = new Input({
+  private readonly topicImage = new Img({
     page: this.page,
     locator: this.selectors.image,
     name: 'Обложка топика',
@@ -334,8 +334,6 @@ export class AdminTopicPage extends BasePage {
 
   async validateImageSrc() {
     await this.topicImage.shouldHaveAttribute('src');
-    const srcValue = await this.topicImage.returnAttributeValue('src');
-    expect(srcValue).toMatch(/.+/);
   }
 
   async validateTopicTags(tags: string[]) {

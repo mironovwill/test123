@@ -22,6 +22,7 @@ export const topicFactoryFixture = {
       await adminTopicsPage.addEditTopicModal.createTopic(topic);
       const id = await adminTopicsPage.getTopicIdFromResponse(adminTopicsPage.page);
       await adminTopicsPage.validateSuccessNotification();
+      if (topic.badgeCheckbox) await adminTopicsPage.validateRewardNotification();
       await adminTopicsPage.validateFirstTopicLink(id);
       await adminTopicsPage.validateFirstTopicCardName(topic.topicName);
       createdTopics.push(id);

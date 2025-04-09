@@ -15,6 +15,9 @@ export class AdminTopicsPage extends BasePage {
     notification: this.page.locator('.message'),
     firstTopicCard: this.page.locator('#topicCard').nth(0),
     firstTopicLink: this.page.locator('#topicCard > div > a').nth(0),
+    rewardNotification: this.page.getByText('Награда была добавлена к материалу', {
+      exact: true,
+    }),
   };
 
   constructor(public page: Page) {
@@ -25,6 +28,12 @@ export class AdminTopicsPage extends BasePage {
     page: this.page,
     locator: this.selectors.h1,
     name: 'H1',
+  });
+
+  private readonly rewardNotification = new Notification({
+    page: this.page,
+    locator: this.selectors.rewardNotification,
+    name: 'Награда была добавлена к материалу',
   });
 
   private readonly firstTopicCardName = new Typography({
@@ -164,6 +173,13 @@ export class AdminTopicsPage extends BasePage {
    */
   async fillTopicNameSearchInput(topicName: string) {
     await this.topicNameSearchInput.fill(topicName);
+  }
+
+  /**
+   * Проверяет отображение уведомления об успешной добавке награды к топику.
+   */
+  async validateRewardNotification() {
+    await this.rewardNotification.shouldBeVisible();
   }
 
   /**

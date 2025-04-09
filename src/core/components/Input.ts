@@ -51,7 +51,7 @@ export class Input extends Component {
    */
   async uploadFile(file: string): Promise<void> {
     await test.step(`В ${this.typeOf} "${this.componentName}" загружен файл - "${file}"`, async () => {
-      const filePath = path.resolve(__dirname, `../test-resources/media/${file}`);
+      const filePath = path.resolve(__dirname, `../helpers/media/${file}`);
       await this.locator.setInputFiles(filePath);
     });
   }

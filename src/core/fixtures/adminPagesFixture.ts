@@ -88,7 +88,9 @@ export const adminPagesFixture = {
     async ({ page }: { page: Page }, use: (cacheRoute: CacheRoute) => Promise<void>) => {
       const cacheRoute = new CacheRoute(page);
       await cacheRoute.GET('/static/js/async/*');
-      await cacheRoute.GET('/api/v1/*');
+      await cacheRoute.GET('/api/v1/topic/*');
+      await cacheRoute.GET('/api/v1/user/*');
+      await cacheRoute.GET('/api/v1/domain/*');
       await use(cacheRoute);
     },
     { auto: true },

@@ -14,7 +14,7 @@ export const rewardGenerator = (
   imageUuid: string = 'image',
 ): RewardDto => {
   return {
-    name: `${faker.commerce.product()}${faker.string.numeric(20)}`,
+    name: `${faker.commerce.product()}${faker.string.numeric(5)}`,
     action,
     description: faker.commerce.productDescription(),
     imageUuid,

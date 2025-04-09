@@ -17,7 +17,15 @@ export class Select extends Component {
    */
   async selectItemByTitle(title: string): Promise<void> {
     await test.step(`Выбор пункта с заголовком "${title}" в ${this.typeOfUpper} "${this.componentName}"`, async () => {
-      await this.locator.getByTitle(title).first().click();
+      const element = this.locator.getByTitle(title).first();
+      let isVisible = await element.isVisible();
+
+      while (!isVisible) {
+        await this.page.keyboard.press('ArrowDown');
+        isVisible = await element.isVisible();
+      }
+
+      await element.click();
     });
   }
 
@@ -28,10 +36,17 @@ export class Select extends Component {
    */
   async selectItemByText(text: string): Promise<void> {
     await test.step(`Выбор пункта с текстом "${text}" в ${this.typeOfUpper} "${this.componentName}"`, async () => {
-      await this.locator.getByText(text).first().click();
+      const element = this.locator.getByText(text).first();
+      let isVisible = await element.isVisible();
+
+      while (!isVisible) {
+        await this.page.keyboard.press('ArrowDown');
+        isVisible = await element.isVisible();
+      }
+
+      await element.click();
     });
   }
-
   /**
    * Выбирает элемент в селекте по его роли и имени
    * @param {string} name - Имя элемента
@@ -40,7 +55,15 @@ export class Select extends Component {
    */
   async selectItemByRole(name: string, role: 'menuitem' | 'option'): Promise<void> {
     await test.step(`Выбор пункта с ролью "${role}" и именем "${name}" в ${this.typeOfUpper} "${this.componentName}"`, async () => {
-      await this.locator.getByRole(role, { name, exact: true }).first().click();
+      const element = this.locator.getByRole(role, { name, exact: true }).first();
+      let isVisible = await element.isVisible();
+
+      while (!isVisible) {
+        await this.page.keyboard.press('ArrowDown');
+        isVisible = await element.isVisible();
+      }
+
+      await element.click();
     });
   }
 

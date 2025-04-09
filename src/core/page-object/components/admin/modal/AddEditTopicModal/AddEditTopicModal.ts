@@ -141,8 +141,8 @@ export class AddEditTopicModal {
     if (topic.links) await this.basicFields.fillLinkInput(topic.links);
     if (topic.files) await this.basicFields.uploadFiles(topic.files);
     if (topic.corpAccessCheckbox) await this.basicFields.checkCorpAccessCheckbox();
+    if (topic.badgeCheckbox && topic.badgeName) await this.fillBadgeDetails(topic);
     if (topic.hasCertificateCheckbox) await this.fillCertificateDetails(topic);
-    if (topic.badgeCheckbox) await this.fillBadgeDetails(topic);
   }
 
   private async fillCertificateDetails({
