@@ -7,8 +7,8 @@
     "prepare": "husky",
     "pretest": "tsc --noEmit && eslint '{src,tests}/**/*.{ts,tsx}'",
     "prettier": "prettier --write \"{**/*,*}.{js,ts}\"",
-    "allure:report": "allure generate --clean && allure serve",
-    "allure:clean": "rm -rf allure-report && rm -rf logs && rm -rf allure-results && rm -rf test-results"
+    "allure:report": "allure serve ./src/report/allure-results",
+    "allure:clean": "rm -rf ./src/report/allure-report && rm -rf ./src/report/logs && rm -rf ./src/report/allure-results && rm -rf ./src/report/test-results"
   },
   "keywords": [],
   "author": "",

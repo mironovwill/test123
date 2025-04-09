@@ -28,7 +28,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['json', { outputFile: `${reportDir}/test-results/test-results.json`, open: 'never' }],
-    ['allure-playwright', { ...allureConfig, outputDir: `${reportDir}/allure-results` }],
+    ['allure-playwright', { ...allureConfig, resultsDir: `${reportDir}/allure-results` }],
   ],
   use: {
     ignoreHTTPSErrors: true,
