@@ -11,3 +11,6 @@ export * from './infographic.test-data';
 export * from './poll.test-data';
 export * from './test.test-data';
 export * from './article.test-data';
+export * from './application.test-data';
+export * from './video.test-data';
+export * from './podcast.test-data';

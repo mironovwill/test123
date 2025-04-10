@@ -1,6 +1,6 @@
 import { appFixture as test } from '@core/fixtures';
 import { epic, feature } from 'allure-js-commons';
-import { bookTopicInfo } from './test-data/book.test-data';
+import { bookTopicInfo } from './test-data';
 
 test.describe(
   'Создание и проверка топика с типом "Книга"',

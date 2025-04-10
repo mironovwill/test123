@@ -1,5 +1,5 @@
 import { appFixture as test } from '@core/fixtures';
-import { eCourseTopicInfo } from './test-data/e-course.test-data';
+import { eCourseTopicInfo } from './test-data';
 
 const { authors, company, place } = eCourseTopicInfo;
 let topicId: string;

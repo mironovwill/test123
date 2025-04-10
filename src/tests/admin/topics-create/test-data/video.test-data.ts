@@ -1,13 +1,13 @@
-import { generateBasicTopicData } from '@core/helpers/test-data/generateBasicTopicData';
-import { ArticleTopic, TopicTypes } from '@core/types';
 import { faker } from '@faker-js/faker/locale/ru';
+import { generateBasicTopicData } from '@core/helpers/test-data/generateBasicTopicData';
+import { TopicTypes, VideoTopic } from '@core/types';
 import testData from '@test-data';
 
-export const articleTopicInfo: ArticleTopic = {
+export const videoTopicInfo: VideoTopic = {
   ...generateBasicTopicData(testData.structures.reward.name, testData.structures.certificate.name),
-  topicType: TopicTypes.ARTICLE,
+  topicType: TopicTypes.VIDEO,
   authors: Array.from({ length: 1 }, () => faker.person.fullName()),
-  year: String(faker.number.int({ min: 2010, max: 2025 })),
+  company: faker.company.name(),
   durationH: '10',
   durationM: '10',
 };

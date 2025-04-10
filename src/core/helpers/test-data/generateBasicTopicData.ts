@@ -4,10 +4,9 @@ import { faker } from '@faker-js/faker/locale/ru';
 export const generateBasicTopicData = (badgeName: string, certificateName: string) => {
   const generateLink = () => faker.internet.url();
   const generateWords = () => faker.lorem.word({ length: { min: 5, max: 10 } });
-  const topicName = faker.book.title();
 
   return {
-    topicName,
+    topicName: faker.book.title(),
     description: faker.lorem.paragraph(),
     categories: [TopicCategories.WORK_ORGANIZATION],
     level: TopicLevels.BASIC,

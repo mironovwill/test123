@@ -7,7 +7,7 @@ export const infographicTopicInfo: InfographicTopic = {
   ...generateBasicTopicData(testData.structures.reward.name, testData.structures.certificate.name),
   topicType: TopicTypes.INFOGRAPHIC,
   authors: Array.from({ length: 1 }, () => faker.person.fullName()),
-  year: '2020',
+  year: String(faker.number.int({ min: 2010, max: 2025 })),
   durationH: '10',
   durationM: '10',
 };
