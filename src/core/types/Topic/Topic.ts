@@ -106,6 +106,7 @@ export type EventTopic = BaseTopic & {
   percent?: string;
   webinarType?: 'Вебинар' | 'Митинг' | 'Тренинг';
   eventName?: string;
+  eventType?: 'Без согласования' | 'С согласованием';
 };
 
 export type InfographicTopic = BaseTopic & {

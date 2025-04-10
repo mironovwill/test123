@@ -1,4 +1,4 @@
-import test, { Page } from '@playwright/test';
+import test, { Locator, Page } from '@playwright/test';
 import { Button, Input, Select } from '@core/components';
 
 export class EventFields {
@@ -180,14 +180,16 @@ export class EventFields {
     await this.page.keyboard.press('Enter');
   }
 
-  async selectDatePickerDate(date: string) {
-    await test.step('Выбор даты в календаре', async () => {
-      const element = this.page.getByAltText(date).nth(0);
-      const isDisabled = await element
-        .getAttribute('class')
-        .then(classes => classes?.includes('ant-picker-cell-disabled'));
+  private async isDateDisabled(element: Locator) {
+    const classes = await element.getAttribute('class');
+    return classes?.includes('ant-picker-cell-disabled');
+  }
 
-      if (isDisabled) {
+  async selectDatePickerDate(date: string) {
+    await test.step(`В календаре выбрать день: ${date}`, async () => {
+      const element = this.page.locator(`(//div[text()=${date}])[1]/..`);
+
+      if (await this.isDateDisabled(element)) {
         await this.page
           .getByRole('button', { name: 'Следующий месяц (PageDown)', exact: true })
           .click();
