@@ -3,6 +3,8 @@ import { chromium } from '@playwright/test';
 import { bootstrapTestData } from '@core/helpers';
 
 export async function globalSetup() {
+  console.log(`Подготовка окружения для тестов... 🧪`);
+
   const errorMessage =
     '⛔️ Необходимо установить переменные окружения: KAMPUS_ADMIN_BASE_URL, TEST_USER_SUPERADMIN_EMAIL, TEST_USER_PASSWORD, KAMPUS_USER_BASE_URL ⛔️';
 

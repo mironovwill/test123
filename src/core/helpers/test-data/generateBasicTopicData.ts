@@ -1,8 +1,7 @@
-import { TopicsLanguages, TopicCategories, TopicTypes, TopicLevels } from '@core/types';
-import { Topic } from '@core/types';
+import { TopicsLanguages, TopicCategories, TopicLevels } from '@core/types';
 import { faker } from '@faker-js/faker/locale/ru';
 
-export const generateBasicTopicData = (badgeName: string, certificateName: string): Topic => {
+export const generateBasicTopicData = (badgeName: string, certificateName: string) => {
   const generateLink = () => faker.internet.url();
   const generateWords = () => faker.lorem.word({ length: { min: 5, max: 10 } });
 
@@ -10,7 +9,6 @@ export const generateBasicTopicData = (badgeName: string, certificateName: strin
     topicName: faker.book.title(),
     description: faker.lorem.paragraph(),
     categories: [TopicCategories.WORK_ORGANIZATION],
-    topicType: TopicTypes.APPLICATION,
     level: TopicLevels.BASIC,
     language: TopicsLanguages.RUSSIAN,
     image: '1000x600.png',

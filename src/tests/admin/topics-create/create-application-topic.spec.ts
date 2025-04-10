@@ -1,23 +1,11 @@
 import { appFixture as test } from '@core/fixtures';
 import { epic, feature } from 'allure-js-commons';
-import { faker } from '@faker-js/faker/locale/ru';
-import { generateBasicTopicData } from '@core/helpers/test-data/generateBasicTopicData';
-import testData from '@test-data';
+import { applicationTopicInfo } from './test-data/application.test-data';
 
 test.describe(
   'Создание и проверка топика с типом "Приложение"',
   { tag: ['@Smoke', '@Admin', '@Приложение'] },
   () => {
-    const applicationTopicInfo = {
-      ...generateBasicTopicData(
-        testData.structures.reward.name,
-        testData.structures.certificate.name,
-      ),
-      cost: String(faker.number.int({ min: 1000, max: 10000 })),
-      durationH: '10',
-      durationM: '10',
-    };
-
     let topicId: string;
 
     test.beforeEach(async ({ createTopicByUI }) => {

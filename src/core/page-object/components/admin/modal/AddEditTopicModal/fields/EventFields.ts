@@ -3,7 +3,7 @@ import { Button, Input, Select } from '@core/components';
 
 export class EventFields {
   private readonly selectors = {
-    meetPlaceInput: this.page.locator('#usersCountInput'),
+    meetPlaceInput: this.page.locator('#meetPlaceInput'),
     usersCountInput: this.page.locator('#usersCountInput'),
     commentInput: this.page.locator('#commentInput'),
     periodInput: this.page.locator('#periodInput'),
@@ -31,7 +31,7 @@ export class EventFields {
   private readonly meetPlaceInput = new Input({
     page: this.page,
     locator: this.selectors.meetPlaceInput,
-    name: 'Место встречи',
+    name: 'Место проведения',
   });
 
   private readonly usersCountInput = new Input({

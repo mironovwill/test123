@@ -95,13 +95,4 @@ export const adminPagesFixture = {
     },
     { auto: true },
   ],
-  disableAnimations: [
-    async ({ page }: { page: Page }, use: () => Promise<void>) => {
-      await page.addStyleTag({
-        content: '* { transition: none !important; animation: none !important; }',
-      });
-      await use();
-    },
-    { auto: true },
-  ],
 };

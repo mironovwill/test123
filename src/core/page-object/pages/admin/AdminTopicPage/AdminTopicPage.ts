@@ -34,6 +34,8 @@ export class AdminTopicPage extends BasePage {
     linksList: this.page.getByTestId('materialLinksList'),
     bookLocationBtn: this.page.getByTestId('adminTopicBookLocation'),
     additionalField: this.page.getByTestId('topicAdminAdditionalField'),
+    companyField: this.page.getByTestId('topicAdminAdditionalField').nth(0),
+    meetPlaceField: this.page.getByTestId('topicAdminAdditionalField').last(),
     bookInPaperText: this.page.getByTestId('topicInPaperField'),
     bookListModal: this.page.getByTestId('topicBookAddressList'),
     eventSchedule: this.page.getByTestId('topicEventSchedule'),
@@ -63,7 +65,7 @@ export class AdminTopicPage extends BasePage {
 
   private readonly topicMeetPlace = new Typography({
     page: this.page,
-    locator: this.selectors.additionalField,
+    locator: this.selectors.meetPlaceField,
     name: 'Место проведения',
   });
 
@@ -87,7 +89,7 @@ export class AdminTopicPage extends BasePage {
 
   private readonly topicCompany = new Typography({
     page: this.page,
-    locator: this.selectors.additionalField,
+    locator: this.selectors.companyField,
     name: 'Компания',
   });
 

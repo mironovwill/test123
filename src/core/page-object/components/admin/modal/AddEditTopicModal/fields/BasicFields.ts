@@ -18,7 +18,7 @@ export class BasicFields {
     tagsInput: this.page.locator('#tagsAutocomplete'),
     skillsInput: this.page.locator('#skillsAutocomplete'),
     costInput: this.page.locator('#costInput'),
-    yearInput: this.page.getByTestId('yearInput'),
+    yearInput: this.page.locator('#yearInput'),
     levelList: this.page.locator('#levelsSelect'),
     hoursInput: this.page.getByTestId('hoursInput'),
     minutesInput: this.page.getByTestId('minutesInput'),

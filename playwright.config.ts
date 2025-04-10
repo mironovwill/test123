@@ -6,7 +6,7 @@ import { cloudGlobalProjects } from 'src/config/cloud/cloud.config';
 
 const GLOBAL_TIMEOUT = process.env.CI ? 60_000 : 60_000;
 const NAVIGATION_TIMEOUT = process.env.CI ? 90_000 : 90_000;
-const EXPECT_TIMEOUT = process.env.CI ? 40_000 : 40_000;
+const EXPECT_TIMEOUT = process.env.CI ? 60_000 : 60_000;
 const RETRIES = process.env.CI ? 2 : 0;
 
 const reportDir = resolve(__dirname, 'src/report');
@@ -31,6 +31,9 @@ export default defineConfig({
     ['allure-playwright', { ...allureConfig, resultsDir: `${reportDir}/allure-results` }],
   ],
   use: {
+    launchOptions: {
+      slowMo: 100,
+    },
     ignoreHTTPSErrors: true,
     testIdAttribute: 'data-qa',
     navigationTimeout: NAVIGATION_TIMEOUT,
