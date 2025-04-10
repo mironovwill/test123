@@ -256,8 +256,9 @@ export class AddEditTopicModal {
     if (cost) await this.basicFields.fillCostInput(cost);
     if (company) await this.basicFields.fillCompanyInput(company);
     if (comment) await this.eventFields.fillCommentInput(comment);
-    if (platform) await this.eventFields.selectPlatform(platform);
     if (participantsCount) await this.eventFields.fillUsersCountInput(participantsCount);
+
+    if (platform) await this.eventFields.selectPlatform(platform);
     if (startTime) await this.eventFields.fillEventStartTime(startTime);
     if (endTime) await this.eventFields.fillEventEndTime(endTime);
     if (startDate) await this.eventFields.selectDatePickerDate(startDate);
@@ -272,9 +273,9 @@ export class AddEditTopicModal {
       if (entrance) await this.eventFields.selectEventEntrance(entrance);
       if (percent) await this.eventFields.fillPercentOfPassingInput(percent);
       if (webinarType) await this.eventFields.selectWebinarType(webinarType);
-    } else if (place) {
-      await this.eventFields.fillEventPlaceTextArea(place);
     }
+
+    if (place) await this.eventFields.fillEventPlaceTextArea(place);
   }
 
   private async fillTopicTypeFifteenDetails({

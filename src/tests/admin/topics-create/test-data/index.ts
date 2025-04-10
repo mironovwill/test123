@@ -6,3 +6,4 @@ export * from './online-external-course.test-data';
 export * from './e-course.test-data';
 export * from './event.test-data';
 export * from './event-mts-link.test-data';
+export * from './event-with-validation.test-data';

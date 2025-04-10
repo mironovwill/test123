@@ -1,7 +1,7 @@
 import { appFixture as test } from '@core/fixtures';
 import { eventMtsLinkTopicInfo, eventTopicInfo } from './test-data';
 import { getTomorrowDay, calculateTopicDuration } from '@core/helpers';
-import { epic, feature } from 'allure-js-commons';
+import { epic, feature, issue } from 'allure-js-commons';
 
 const testCases = [
   {
@@ -26,6 +26,7 @@ testCases.forEach(({ name, testData }) => {
       test.beforeEach(async ({ createTopicByUI }) => {
         await epic('Панель администратора');
         await feature('Создание и проверка топиков');
+        issue('10756');
         topicId = await createTopicByUI(testData);
       });
 
