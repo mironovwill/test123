@@ -4,6 +4,7 @@ import {
   AdminProfileSettingPage,
   AdminTopicsPage,
   AdminTopicPage,
+  AdminUsersPage,
 } from '@core/page-object/pages/admin';
 import { CacheRoute } from 'playwright-network-cache';
 
@@ -12,6 +13,7 @@ export interface AdminPagesFixture {
   adminTopicsPage: AdminTopicsPage;
   adminProfileSettingPage: AdminProfileSettingPage;
   adminTopicPage: AdminTopicPage;
+  adminUsersPage: AdminUsersPage;
   exceptionLogger: void;
   cacheRoute: CacheRoute;
   disableAnimations: void;
@@ -42,6 +44,13 @@ export const adminPagesFixture = {
   ) => {
     const adminTopicsPage = new AdminTopicsPage(page);
     await use(adminTopicsPage);
+  },
+  adminUsersPage: async (
+    { page }: { page: Page },
+    use: (page: AdminUsersPage) => Promise<void>,
+  ) => {
+    const adminUsersPage = new AdminUsersPage(page);
+    await use(adminUsersPage);
   },
   exceptionLogger: [
     async ({ page }: { page: Page }, use: () => Promise<void>) => {

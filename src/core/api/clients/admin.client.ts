@@ -272,4 +272,12 @@ export class AdminApiClient extends ApiClient {
     const response = await this.get<SkillResponse>(adminApiConfig.endpoints.skills.base);
     return response.content;
   }
+
+  async getUserPositions(): Promise<string[]> {
+    return await this.get(adminApiConfig.endpoints.user.position);
+  }
+
+  async getUserDepartments(): Promise<string[]> {
+    return await this.get(adminApiConfig.endpoints.user.department);
+  }
 }

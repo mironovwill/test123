@@ -48,6 +48,10 @@ const adminApiConfig = {
     skills: {
       base: '/skill',
     },
+    user: {
+      position: '/user/position',
+      department: '/user/department',
+    },
   },
 };
 

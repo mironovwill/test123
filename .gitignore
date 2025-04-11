@@ -1,18 +1,17 @@
 
 # Playwright
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
 .auth
 .network-cache
 
-# Allure
-allure-report/
-allure-results/
-logs/
-test-results/
+# Reports
+src/report/allure-report/
+src/report/allure-results/
+src/report/logs/
+src/report/test-results/
+src/report/playwright-report/
+src/report/blob-report/
+src/report/playwright/.cache/
 
 # Environment variables
 .env

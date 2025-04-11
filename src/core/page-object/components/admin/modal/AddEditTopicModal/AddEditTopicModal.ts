@@ -1,44 +1,18 @@
 import { Page } from '@playwright/test';
 import { Button, Modal } from '@core/components';
-import {
-  BadgeFields,
-  BasicFields,
-  BookFields,
-  CertificateFields,
-  ECourseFields,
-  EventFields,
-} from './fields';
-import {
-  ApplicationTopic,
-  ArticleTopic,
-  BookTopic,
-  CorporateCourseTopic,
-  ECourseTopic,
-  EventTopic,
-  ExternalCourseTopic,
-  InfographicTopic,
-  PodcastTopic,
-  PollTopic,
-  TestTopic,
-  Topic,
-  TopicTypes,
-  VideoTopic,
-} from '@core/types';
+import { BadgeFields, BasicFields, CertificateFields, EventFields } from './fields';
+import { ApplicationTopic, EventTopic, Topic, TopicTypes } from '@core/types';
 
 export class AddEditTopicModal {
   readonly basicFields: BasicFields;
   readonly badgeFields: BadgeFields;
-  readonly bookFields: BookFields;
   readonly certificateFields: CertificateFields;
-  readonly eCourseFields: ECourseFields;
   readonly eventFields: EventFields;
 
   constructor(public page: Page) {
     this.basicFields = new BasicFields(page);
     this.badgeFields = new BadgeFields(page);
-    this.bookFields = new BookFields(page);
     this.certificateFields = new CertificateFields(page);
-    this.eCourseFields = new ECourseFields(page);
     this.eventFields = new EventFields(page);
   }
 
@@ -83,28 +57,8 @@ export class AddEditTopicModal {
     await this.fillAdditionalFields(topic);
 
     switch (topic.topicType) {
-      case TopicTypes.BOOK:
-        await this.fillBookDetails(topic);
-        break;
-      case TopicTypes.ARTICLE:
-      case TopicTypes.INFOGRAPHIC:
-      case TopicTypes.POLL:
-      case TopicTypes.TEST:
-        await this.fillTopicTypeFifteenDetails(topic);
-        break;
-      case TopicTypes.CORPORATE_COURSE:
-      case TopicTypes.EXTERNAL_COURSE:
-        await this.fillCorporateExternalCourseDetails(topic);
-        break;
-      case TopicTypes.E_COURSE:
-        await this.fillECourseDetails(topic);
-        break;
       case TopicTypes.EVENT:
         await this.fillEventDetails(topic);
-        break;
-      case TopicTypes.VIDEO:
-      case TopicTypes.PODCASTS:
-        await this.fillFourTopicTypeDetails(topic);
         break;
       case TopicTypes.APPLICATION:
         await this.fillApplicationDetails(topic);
@@ -165,73 +119,10 @@ export class AddEditTopicModal {
     await this.badgeFields.selectBadge(badgeName!);
   }
 
-  private async fillBookDetails({
-    authors,
-    bookPublisher,
-    paper,
-    addressBook,
-    cost,
-    year,
-    durationH,
-    durationM,
-  }: BookTopic) {
-    if (authors) await this.basicFields.fillAuthorInput(authors);
-    if (bookPublisher) await this.basicFields.fillCompanyInput(bookPublisher);
-    if (paper) await this.bookFields.checkInPaperCheckbox();
-    if (addressBook) await this.bookFields.fillAddressBookInput(addressBook);
-    if (cost) await this.basicFields.fillCostInput(cost);
-    if (year) await this.basicFields.fillYearInput(year);
-    if (durationH) await this.basicFields.fillHoursInput(durationH);
-    if (durationM) await this.basicFields.fillMinutesInput(durationM);
-  }
-
   private async fillApplicationDetails({ cost, durationH, durationM }: ApplicationTopic) {
     if (cost) await this.basicFields.fillCostInput(cost);
     if (durationH) await this.basicFields.fillHoursInput(durationH);
     if (durationM) await this.basicFields.fillMinutesInput(durationM);
-  }
-
-  private async fillCorporateExternalCourseDetails({
-    authors,
-    cost,
-    durationH,
-    durationM,
-    company,
-    type,
-    period,
-    place,
-  }: CorporateCourseTopic | ExternalCourseTopic) {
-    if (authors) await this.basicFields.fillAuthorInput(authors);
-    if (cost) await this.basicFields.fillCostInput(cost);
-    if (durationH) await this.basicFields.fillHoursInput(durationH);
-    if (durationM) await this.basicFields.fillMinutesInput(durationM);
-    if (company) await this.basicFields.fillCompanyInput(company);
-
-    if (type === 'Онлайн') {
-      await this.eventFields.selectTopicTypeOnlineTab();
-      if (period) await this.eventFields.selectPeriodInput(period);
-      if (place) await this.eventFields.fillMeetPlaceInput(place);
-    }
-  }
-
-  private async fillECourseDetails({
-    authors,
-    period,
-    startTimeH,
-    startTimeM,
-    durationH,
-    durationM,
-    company,
-    place,
-  }: ECourseTopic) {
-    if (authors) await this.basicFields.fillAuthorInput(authors);
-    if (period) await this.eventFields.selectPeriodInput(period);
-    if (startTimeH && startTimeM)
-      await this.eCourseFields.fillStartTimeInputs(startTimeH, startTimeM);
-    if (durationH) await this.basicFields.fillHoursInput(durationH);
-    if (durationM) await this.basicFields.fillMinutesInput(durationM);
-    if (company) await this.basicFields.fillCompanyInput(company);
-    if (place) await this.eventFields.fillMeetPlaceInput(place);
   }
 
   private async fillEventDetails({
@@ -276,29 +167,5 @@ export class AddEditTopicModal {
     }
 
     if (place) await this.eventFields.fillEventPlaceTextArea(place);
-  }
-
-  private async fillTopicTypeFifteenDetails({
-    authors,
-    year,
-    durationH,
-    durationM,
-  }: ArticleTopic | InfographicTopic | PollTopic | TestTopic) {
-    if (authors) await this.basicFields.fillAuthorInput(authors);
-    if (year) await this.basicFields.fillYearInput(year);
-    if (durationH) await this.basicFields.fillHoursInput(durationH);
-    if (durationM) await this.basicFields.fillMinutesInput(durationM);
-  }
-
-  private async fillFourTopicTypeDetails({
-    authors,
-    company,
-    durationH,
-    durationM,
-  }: VideoTopic | PodcastTopic) {
-    if (authors) await this.basicFields.fillAuthorInput(authors);
-    if (company) await this.basicFields.fillCompanyInput(company);
-    if (durationH) await this.basicFields.fillHoursInput(durationH);
-    if (durationM) await this.basicFields.fillMinutesInput(durationM);
   }
 }

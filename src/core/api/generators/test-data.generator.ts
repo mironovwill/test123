@@ -35,6 +35,8 @@ export const generateTestData = async (adminApiClient: AdminApiClient) => {
     bookAddress,
     tags,
     skills,
+    positions,
+    departments,
   ] = await Promise.all([
     adminApiClient.createFunction(functionGenerator()),
     adminApiClient.createDepartment(departmentGenerator()),
@@ -48,6 +50,8 @@ export const generateTestData = async (adminApiClient: AdminApiClient) => {
     adminApiClient.getBooksAddress(),
     adminApiClient.getTags(),
     adminApiClient.getSkills(),
+    adminApiClient.getUserPositions(),
+    adminApiClient.getUserDepartments(),
   ]);
 
   return {
@@ -63,5 +67,7 @@ export const generateTestData = async (adminApiClient: AdminApiClient) => {
     bookAddress,
     tags,
     skills,
+    positions,
+    departments,
   };
 };
