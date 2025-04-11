@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 import { Typography } from '@core/components';
-import { UserData } from '../CreateUserModal/CreateUserModal';
+import { UserData } from '@core/types';
 
 export class UserPersonalInfoModal {
   private readonly selectors = {
