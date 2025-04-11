@@ -16,15 +16,13 @@ import { TopicBlockPlanTypes } from '@core/types';
 
 export class AdminTopicLearningPage extends BasePage {
   private readonly selectors = {
-    topicLearningAddLearning: this.page.getByTestId('adminTopicsLearningAddLearning'),
-    topicLearningAddModalNameInput: this.page.getByTestId('adminTopicsLearningAddModalNameInput'),
-    topicLearningAddModalBlockTypeSelect: this.page.getByTestId(
-      'adminTopicsLearningAddModalBlockTypeSelect',
-    ),
+    topicLearningAddLearning: this.page.getByTestId('blockPlanCreateBtn'),
+    topicLearningAddModalNameInput: this.page.getByTestId('addBlockInput'),
+    topicLearningAddModalBlockTypeSelect: this.page.getByTestId('addBlockSelect'),
     topicLearningAddModalBlockTypeList: this.page.locator(
       '//span[@data-qa="addBlockSelect-list"]/div[2]/div/div/div',
     ),
-    topicLearningAddModalSubmit: this.page.getByTestId('adminTopicsLearningAddModalSubmit'),
+    topicLearningAddModalSubmit: this.page.getByTestId('addBlockSubmitBtn'),
     topicLearningFileValue: this.page.getByTestId('adminLearningFileName'),
   };
 
@@ -133,7 +131,6 @@ export class AdminTopicLearningPage extends BasePage {
       await this.fillBlockNameInput(blockPlanName);
       await this.selectBlockType(blockPlanType);
       await this.clickSubmitBlockBtn();
-      await this.clickToBlockPlanByName(blockPlanName);
     });
   }
 
@@ -156,12 +153,9 @@ export class AdminTopicLearningPage extends BasePage {
   }
 
   async getBlockPlanIdFromResponse(page: Page) {
-    const response = await page
-      .waitForResponse(response => response.url().includes('/api/v1/blocks'))
-      .catch(e => {
-        throw e;
-      });
-
+    const response = await page.waitForResponse(response =>
+      response.url().includes('/api/v1/block'),
+    );
     const responseBody = await response.json();
     return responseBody.id;
   }

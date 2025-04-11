@@ -52,6 +52,10 @@ const adminApiConfig = {
       position: '/user/position',
       department: '/user/department',
     },
+    block: {
+      base: '/block',
+      byId: (id: number) => `/block/${id}`,
+    },
   },
 };
 

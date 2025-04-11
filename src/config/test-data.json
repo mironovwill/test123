@@ -1,40 +1,40 @@
 {
   "structures": {
     "functionInternal": {
-      "id": 9057,
-      "name": "коммуникационный9926763877205554941340106757566268895974826856872941315065629782161093689624366198863325545856653328",
+      "id": 9068,
+      "name": "логистический5858856915857832256805461491673096556381145887717997561662554638279799125270126649243242649855825548",
       "companyId": 1000
     },
     "department": {
-      "id": 8507,
-      "name": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+      "id": 8518,
+      "name": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
       "companyId": 1000,
       "limitCost": 0
     },
     "reward": {
-      "id": 325,
-      "name": "Стул76576",
+      "id": 336,
+      "name": "Компьютер09142",
       "imageUuid": "image",
       "status": "ACTIVE",
-      "description": "Experience the розовый brilliance of our Носки, perfect for yellowish environments"
+      "description": "The Public-key high-level initiative Ножницы offers reliable performance and wordy design"
     },
     "certificate": {
-      "name": "Стол46916",
+      "name": "Клатч53826",
       "templateId": 6,
       "type": "Сертификат",
       "confirmText": "Настоящий сертификат подтверждает, что",
       "completeText": "успешно прошел(а) программу обучения",
       "base64Logo1": "blob:https://admin.kampus.local/123",
       "base64Logo2": null,
-      "id": "440",
+      "id": "451",
       "curNumber": null,
       "maxNumber": null,
       "minNumber": null,
       "series": null
     },
     "author": {
-      "id": 26207,
-      "name": "Ратмир Агафонов26767",
+      "id": 26218,
+      "name": "Игнатьева Марфа43344",
       "sharing": false,
       "global": false,
       "visible": null
@@ -5137,6 +5137,1256 @@
             "typeLabel": {
               "id": 6,
               "name": "Событие"
+            }
+          },
+          {
+            "id": 77372,
+            "name": "The Odyssey",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77373,
+            "name": "The Aeneid",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77374,
+            "name": "Don Quixote",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77375,
+            "name": "The Remains of the Day",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77376,
+            "name": "Cranford",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77377,
+            "name": "Notes from the Underground",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77378,
+            "name": "The Red and the Black",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77379,
+            "name": "The Heart is a Lonely Hunter",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77381,
+            "name": "Treasure Island",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77382,
+            "name": "Nostromo",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77383,
+            "name": "Anne of Green Gables",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77384,
+            "name": "Blood Meridian",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77385,
+            "name": "A Wrinkle in Time",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77386,
+            "name": "Underworld",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77387,
+            "name": "Winnie-the-Pooh",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77388,
+            "name": "The Enchanted April",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77389,
+            "name": "Cranford",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77390,
+            "name": "David Copperfield",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77391,
+            "name": "Oscar and Lucinda",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77392,
+            "name": "Life of Pi",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77393,
+            "name": "The Red and the Black",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77394,
+            "name": "A Study in Scarlet",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77395,
+            "name": "Uncle Tom's Cabin",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77396,
+            "name": "Go Tell It on the Mountain",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77397,
+            "name": "Lolita",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77398,
+            "name": "Clarissa",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77399,
+            "name": "Herzog",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77400,
+            "name": "On the Duty of Civil Disobedience",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77401,
+            "name": "Rabbit, Run",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77402,
+            "name": "Carmilla",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77403,
+            "name": "Oscar and Lucinda",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77404,
+            "name": "Life of Pi",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77405,
+            "name": "War and Peace",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77406,
+            "name": "Bleak House",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77407,
+            "name": "The Pursuit of Love",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77408,
+            "name": "Tristram Shandy",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77409,
+            "name": "Things Fall Apart",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77410,
+            "name": "The Pilgrim's Progress",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77411,
+            "name": "Josefine Mutzenbacher",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77412,
+            "name": "The Idiot",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77413,
+            "name": "Scoop",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77414,
+            "name": "The Handmaid's Tale",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77415,
+            "name": "Madame Bovary",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77416,
+            "name": "The Wind in the Willows",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77417,
+            "name": "The Prophet",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77418,
+            "name": "The Big Sleep",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77419,
+            "name": "Notes from the Underground",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77420,
+            "name": "The Catcher in the Rye",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77421,
+            "name": "The Adventures of Tom Sawyer",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77422,
+            "name": "The Sun Also Rises",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77423,
+            "name": "Gulliver's Travels",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77424,
+            "name": "Tristram Shandy",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77425,
+            "name": "On the Road",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77426,
+            "name": "On the Duty of Civil Disobedience",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77427,
+            "name": "The War of the Worlds",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77428,
+            "name": "The Idiot",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77429,
+            "name": "His Dark Materials",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77430,
+            "name": "The Thirty-Nine Steps",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77431,
+            "name": "The Handmaid's Tale",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77432,
+            "name": "Heart of Darkness",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77433,
+            "name": "Charlie and the Chocolate Factory",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77434,
+            "name": "Robinson Crusoe",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77435,
+            "name": "Tropic of Cancer",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77436,
+            "name": "All Quiet on the Western Front",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77437,
+            "name": "L.A. Confidential",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77438,
+            "name": "In Search of Lost Time",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77439,
+            "name": "The Stranger",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
+            }
+          },
+          {
+            "id": 77440,
+            "name": "The Prime of Miss Jean Brodie",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77441,
+            "name": "Alice's Adventures in Wonderland",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77442,
+            "name": "Brideshead Revisited",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77443,
+            "name": "For Whom the Bell Tolls",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77444,
+            "name": "The Adventures of Huckleberry Finn",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77445,
+            "name": "The Day of the Locust",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 5,
+              "name": "Приложение",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 14,
+              "name": "Приложение",
+              "topicTypeId": 5
+            }
+          },
+          {
+            "id": 77446,
+            "name": "A Modest Proposal",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77447,
+            "name": "If on a Winter's Night a Traveler",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 16,
+              "name": "Книга",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 7,
+              "name": "Книга",
+              "topicTypeId": 16
+            }
+          },
+          {
+            "id": 77448,
+            "name": "Emma",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 8,
+              "name": "Событие",
+              "approved": false,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77449,
+            "name": "Of Mice and Men",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 15,
+              "name": "Статья",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 8,
+              "name": "Статья",
+              "topicTypeId": 15
+            }
+          },
+          {
+            "id": 77450,
+            "name": "Native Son",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 23,
+              "name": "Конференция",
+              "approved": true,
+              "withEvents": true
+            },
+            "typeLabel": {
+              "id": 6,
+              "name": "Событие"
+            }
+          },
+          {
+            "id": 77451,
+            "name": "One Hundred Years of Solitude",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 1,
+              "name": "Электронный курс",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 5,
+              "name": "Электронный курс",
+              "topicTypeId": 1
+            }
+          },
+          {
+            "id": 77452,
+            "name": "My Bondage and My Freedom",
+            "thumbFileUuid": null,
+            "type": {
+              "id": 4,
+              "name": "Видео",
+              "approved": false,
+              "withEvents": false
+            },
+            "typeLabel": {
+              "id": 12,
+              "name": "Видео",
+              "topicTypeId": 4
             }
           }
         ],
@@ -14429,7 +15679,6 @@
       "Ведущий интеграционный администратор3647559919771527672574228884441599696640863713335731661932054174056881868835534478920798626836737639",
       "Ведущий интеграционный помощник6235721421976363616289127571866078798845595779308637068203272314017560221703030153145743769837690139",
       "Ведущий маркетинговый разработчик4061235207763126371868991109078080251591722145747101617959806064206407321956071024638318892221818953",
-      "Ведущий операционный агент9940483732526446527766090228435687643633258895372543941882058038713612578291916123918597506829604574",
       "Ведущий функциональный разработчик9986858875754056079819983316928953788976563096209507644313521457133477264796220594087312284686437596",
       "Ведущий функциональный сотрудник1303242787294754586237266168224225684096658521164062686228784702754744350004000321846709206356287118",
       "Генеральный интеграционный координатор6698050548906214894160407046286607320837150334635162594826860849798214295905285646104698426646411670",
@@ -14442,6 +15691,7 @@
       "Генеральный маркетинговый техник1629446183110490580412459569737696838929944834781810917557942065283519651186638430282928276719345028",
       "Генеральный операционный агент1157093117444326589418130307299066192918680034699840007954241431200849794135678326219820449842016073",
       "Генеральный операционный дизайнер2054021194196836479482272713708374179158092912371710065842411355030611467236481203516216154483206898",
+      "Генеральный операционный инженер9945909923322881601153082309331833857549564900763834653595306748965934291248338432229228315975996722",
       "Генеральный оптимизационный дизайнер2253759154305520356803947592173476163120335215859155160589503700605466358258433053619870995673307416",
       "Главный интеграционный специалист0937162956550859665293887946737707064131420801943812863264136563049036773117843973934390681671856636",
       "Главный коммуникационный агент0423480832390869916431725255440493920978303541291712181371662506003841325076687031565784760654480990",
@@ -14539,22 +15789,22 @@
   },
   "users": {
     "admin": {
-      "id": 26427,
-      "login": "lyubosmysl_sukhanova@yandex.ru",
+      "id": 26481,
+      "login": "marfa.nazarova@ya.ru",
       "photoUuid": null,
       "localPhotoUuid": null,
       "about": null,
-      "firstName": "Эрнст",
-      "lastName": "Кузнецов",
-      "middleName": "Владиленович",
-      "company": "ГУП Калинин",
-      "manager": "Шарова Лора Владиславовна",
-      "email": "lyubosmysl_sukhanova@yandex.ru",
-      "department": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+      "firstName": "Корнил",
+      "lastName": "Гришин",
+      "middleName": "Васильевна",
+      "company": "ОАО Акулина",
+      "manager": "Смирнова Глеб Богдановна",
+      "email": "marfa.nazarova@ya.ru",
+      "department": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
       "position": null,
       "guid": "undefined",
       "googleId": null,
-      "function": "консультант",
+      "function": "дизайнер",
       "roleId": 2,
       "parentRoleId": null,
       "locked": false,
@@ -14562,19 +15812,19 @@
       "lastIncome": "1900-01-01T00:00:00",
       "status": "ACTIVE",
       "type": "LOCAL",
-      "createdDate": "2025-04-11T11:47:37.534625428",
+      "createdDate": "2025-04-11T13:12:56.252749674",
       "created": 0,
       "planned": 0,
       "finished": 0,
       "score": 0,
       "authorities": [
-        "FUNCTION_INTERNAL_UPDATE",
         "NOTIFICATION_UPDATE",
+        "FUNCTION_INTERNAL_UPDATE",
         "DIAGNOSTIC_COMPETENCE_OPTIONS_READ",
         "TOPIC_SCORM_DELETE",
         "TOPIC_EXECUTIVE_TASKS_UPDATE",
-        "MENTOR_UPDATE_BY_ADMIN",
         "STUDY_PLAN_CREATE_BY_USER",
+        "MENTOR_UPDATE_BY_ADMIN",
         "COMPILATION_COMMENT_DELETE",
         "ACCESS_TO_ADMIN_SURVEY",
         "TOPIC_TYPEFORM_DELETE",
@@ -14584,15 +15834,15 @@
         "PRODUCT_VISIBILITY_SET",
         "STUDY_PLAN_UPDATE_BY_ADMIN",
         "TAG_CREATE",
-        "EXPORT_TOPIC_EXECUTIVE_RESULTS",
         "MERIT_READ",
+        "EXPORT_TOPIC_EXECUTIVE_RESULTS",
         "DIAGNOSTIC_SETTINGS_UPDATE",
         "PROJECT_360_DEACTIVATE",
         "TOPIC_BLOCK_EXECUTIVE_TASK_READ",
-        "SEARCH_READ",
         "QUESTION_BANK_CREATE",
-        "LOCALE_READ",
+        "SEARCH_READ",
         "ACCESS_TO_ADMIN_TOPIC_INSPECTION",
+        "LOCALE_READ",
         "TAG_DELETE",
         "TRACK_UPDATE",
         "TOPIC_PRESENTATION_DELETE",
@@ -14628,8 +15878,8 @@
         "BOOK_ADDRESS_FIND_ADDRESS",
         "SKILL_READ",
         "TOPIC_PRESENTATION_CREATE",
-        "TOPIC_FILES_EXPORT",
         "EXPORT_USERS_PLAN",
+        "TOPIC_FILES_EXPORT",
         "FAQ_READ",
         "EXPORT_USERS_FROM_EVENT",
         "TOPIC_CHAPTER_CREATE",
@@ -14662,8 +15912,8 @@
         "USER_UPDATE",
         "MENTOR_CREATE_BY_ADMIN",
         "MENTOR_GRATITUDE_READ",
-        "TOPIC_CHAPTER_DELETE",
         "LANGUAGE_READ",
+        "TOPIC_CHAPTER_DELETE",
         "FEE_BASED_COURSE_EVENT_ADD",
         "COMPILATION_FAVORITE_INTERACT",
         "GET_MENTORING_COMPANY_SETTINGS",
@@ -14672,18 +15922,18 @@
         "TOPIC_TEST_CREATE",
         "THEME_READ",
         "NEWS_ADMIN_GET_FILTER",
-        "SURVEY_CREATE",
         "MENTOR_CREATE_BY_USER",
+        "SURVEY_CREATE",
         "QUESTION_BANK_UPDATE",
         "PROJECT_360_CREATE",
         "TOPIC_ANSWER_READ",
         "TOPIC_PRESENTATION_READ",
         "MENTEE_STATUS_UPDATE_BY_ADMIN",
-        "USER_SIGN_UP_LOAD",
-        "THEME_DELETE",
         "NEWS_ADMIN_ALL_STATUS",
-        "STUDY_PLAN_DELETE_BY_USER",
+        "THEME_DELETE",
+        "USER_SIGN_UP_LOAD",
         "NEWS_VISIBILITY_FILTER_CREATE",
+        "STUDY_PLAN_DELETE_BY_USER",
         "MENTOR_GRATITUDE_UPDATE",
         "FEE_BASED_COURSE_COMMENT_READ",
         "BOOK_ADDRESS_ALL",
@@ -14693,10 +15943,10 @@
         "PRODUCT_ADMIN_GET_COST_RANGE",
         "TRACK_PLAN_EDITE",
         "FEE_BASED_COURSE_EVENT_READ_ADMIN",
-        "Получение SSO токена для своего аккаунта в alpina",
         "PRODUCT_ADMIN_GET_NAME_LIST",
-        "DIAGNOSTIC_SETTINGS_READ",
+        "Получение SSO токена для своего аккаунта в alpina",
         "TOPIC_COMMENT_REPLY",
+        "DIAGNOSTIC_SETTINGS_READ",
         "BOOK_ADDRESS_FREE",
         "DEPARTMENT_INTERNAL_UPDATE",
         "TOPIC_EXECUTIVE_TASKS_READ",
@@ -14720,8 +15970,8 @@
         "ACCESS_TO_ADMIN_EVENT_CALENDAR",
         "DIAGNOSTIC_COMPETENCE_OPTIONS_DELETE",
         "ACCESS_TO_QUESTION_BANK",
-        "TOPIC_COMMENT_UPDATE",
         "BONUS_UPDATE",
+        "TOPIC_COMMENT_UPDATE",
         "DIAGNOSTIC_QUESTION_UPDATE",
         "PRODUCT_ADMIN_CREATE",
         "FEE_BASED_COURSE_REQUEST_UPDATE",
@@ -14732,10 +15982,10 @@
         "EXPORT_MASS_FILTER_USERS",
         "DIAGNOSTIC_COMPETENCE_OPTIONS_UPDATE",
         "DIAGNOSTIC_QUESTIONS_TO_MANAGE_READ",
-        "DIAGNOSTIC_QUESTION_ANSWER_CREATE",
         "USER_READ",
-        "TOPIC_TYPEFORM_UPDATE",
+        "DIAGNOSTIC_QUESTION_ANSWER_CREATE",
         "PROFILE_TAB_INTERACT",
+        "TOPIC_TYPEFORM_UPDATE",
         "BANNERS_READ",
         "PRODUCT_ADMIN_GET_ORDER_STATUS_LIST_BY_ID",
         "BOOK_ADDRESS_CREATE",
@@ -14752,8 +16002,8 @@
         "THEME_CHANGE_VISIBLE",
         "MASS_FILTER_INTERACT",
         "FEE_BASED_COURSE_REQUEST_EXPORT",
-        "COMPILATION_COMMENT_CREATE",
         "ACCESS_TO_USERS_MYPOLLS",
+        "COMPILATION_COMMENT_CREATE",
         "DIAGNOSTIC_QUESTION_DELETE",
         "DIAGNOSTIC_ATTEMPTS_EXPORT",
         "TOPIC_ARTICLE_DELETE",
@@ -14765,8 +16015,8 @@
         "EXPORT_LOG_MATERIAL",
         "TRACK_CREATE",
         "TOPIC_VIDEO_READ",
-        "TOPIC_ARTICLE_READ",
         "MENTOR_UPDATE_BY_USER",
+        "TOPIC_ARTICLE_READ",
         "FEE_BASED_COURSE_EVENT_READ",
         "FEE_BASED_COURSE_COMMENT_UPDATE",
         "S3_DELETE",
@@ -14783,8 +16033,8 @@
         "INCOME_READ",
         "ACCESS_TO_ADMIN_USERS",
         "TOPIC_READ",
-        "STUDY_PLAN_IMPORT",
         "ACCESS_TO_COMPANY_MESSAGES_ADMIN",
+        "STUDY_PLAN_IMPORT",
         "SURVEY_READ",
         "CUSTOM_FIELD_VALUES_READ",
         "TOPIC_VIDEO_CREATE",
@@ -14793,8 +16043,8 @@
         "NEWS_COMMENT_UPDATE",
         "QUESTION_BANK_FILTER",
         "STUDY_PLAN_READ",
-        "NOTIFICATION_UPDATE_TO_READ",
         "FEE_BASED_COURSE_COMMENT_CREATE",
+        "NOTIFICATION_UPDATE_TO_READ",
         "TOPIC_VISIBILITY_FILTER_READ",
         "SURVEY_UPDATE",
         "ACCESS_TO_ADMIN_SHOP",
@@ -14820,8 +16070,8 @@
         "FEE_BASED_COURSE_REQUEST_PARAM_READ",
         "TOPIC_EXISTING_MATERIAL_CREATE",
         "FEE_BASED_COURSE_COMMENT_DELETE",
-        "COMPETENCE_READ",
         "CAREER_PLAN_ACCESS",
+        "COMPETENCE_READ",
         "POSITIONS_READ",
         "TOPIC_SCORM_UPDATE",
         "CERTIFICATES_READ",
@@ -14848,10 +16098,10 @@
         "TOPIC_PRESENTATION_UPDATE",
         "TOPIC_BLOCK_CREATE",
         "CUSTOM_FIELD_READ",
-        "COMPETENCE_GROUP_READ",
         "CAREER_POSITION_READ",
-        "TOPIC_CATEGORY_READ",
+        "COMPETENCE_GROUP_READ",
         "NEWS_RATE",
+        "TOPIC_CATEGORY_READ",
         "ACCESS_TO_ADMIN_APPROVE",
         "FEE_BASED_COURSE_REQUEST_INTERACT",
         "TOPIC_ARTICLE_CREATE",
@@ -14869,13 +16119,13 @@
         "DIAGNOSTIC_COMPETENCE_OPTIONS_CREATE",
         "TOPIC_SCORM_INTERACT",
         "TOPIC_VISIBILITY_FILTER_DELETE",
-        "TOPIC_SCORM_READ",
         "TOPIC_CHAPTER_UPDATE",
+        "TOPIC_SCORM_READ",
         "TOPIC_EXECUTIVE_TASKS_CREATE",
         "TOPIC_EXISTING_MATERIAL_INTERACT",
         "TOPIC_LEVEL_UPDATE",
-        "AUTHOR_DELETE",
         "TRACK_DELETE",
+        "AUTHOR_DELETE",
         "THEME_CREATE",
         "STUDY_PLAN_DELETE_BY_ADMIN",
         "DIAGNOSTIC_QUESTION_ANSWER_DELETE",
@@ -14888,8 +16138,8 @@
         "CONVENTUS_RESULTS_EXPORT",
         "REWARD_ACCESS",
         "PRODUCT_ADMIN_GET_LIST",
-        "PROJECT_360_ACTIVATE",
         "EXPORT_USERS_OF_COMPANY",
+        "PROJECT_360_ACTIVATE",
         "TOPIC_QUESTION_READ",
         "TOPIC_TILDA_READ",
         "MENTOR_COMMENT_DELETE",
@@ -14900,18 +16150,18 @@
         "USER_REWARD_ACCESS",
         "DIAGNOSTIC_ATTEMPT_SELF_READ",
         "MENTOR_COMMENT_READ",
-        "COMPILATION_COMMENT_UPDATE",
         "MENTEE_READ_BY_ADMIN",
+        "COMPILATION_COMMENT_UPDATE",
         "FUNCTION_INTERNAL_DELETE",
-        "MENTEE_STATUS_READ_BY_USER",
         "TOPIC_EXPORT",
+        "MENTEE_STATUS_READ_BY_USER",
         "NEWS_VISIBLE_FILTER_SET",
         "TOPIC_EXECUTIVE_ANSWER_UPDATE",
-        "USER_TOPICS_READ",
         "TOPIC_TYPEFORM_CREATE",
+        "USER_TOPICS_READ",
         "ACCESS_TO_ADMIN_PROFILE",
-        "FEE_BASED_COURSE_REQUEST_MANAGE",
         "MAIL_REMIND",
+        "FEE_BASED_COURSE_REQUEST_MANAGE",
         "QUESTION_BANK_IMPORT",
         "PRODUCT_ADMIN_UPDATE_STATUS",
         "DIAGNOSTIC_QUESTION_CREATE",
@@ -14930,8 +16180,8 @@
         "TOPIC_TYPE_READ",
         "TOPIC_UPDATE",
         "DIAGNOSTIC_QUESTIONS_TO_PASS_READ",
-        "BONUS_READ",
         "ACCESS_TO_ADMIN_COLLECTIONS",
+        "BONUS_READ",
         "MENTOR_READ_BY_ADMIN",
         "CUSTOM_FIELD_VALUES_UPDATE",
         "STUDY_PLAN_INFO_READ",
@@ -14956,13 +16206,13 @@
       ],
       "managers": [
         {
-          "id": 26425,
-          "userId": 26425,
-          "login": "anzhelika_samoilov31@mail.ru",
-          "firstName": "Лора",
-          "lastName": "Шарова",
-          "middleName": "Владиславовна",
-          "fullName": "Шарова Лора Владиславовна"
+          "id": 26477,
+          "userId": 26477,
+          "login": "pimen_veselov60@gmail.com",
+          "firstName": "Глеб",
+          "lastName": "Смирнова",
+          "middleName": "Богдановна",
+          "fullName": "Смирнова Глеб Богдановна"
         }
       ],
       "inPlan": false,
@@ -14973,16 +16223,16 @@
       "blockingDate": null,
       "functionInternalDto": null,
       "departmentInternalDto": {
-        "id": 8507,
-        "name": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+        "id": 8518,
+        "name": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
         "companyId": 1000,
         "limitCost": 0
       },
       "language": "ru_RU",
-      "location": "Таштагол",
+      "location": "Учалы",
       "startOfJob": null,
       "purpose": null,
-      "phone": "+70277982163",
+      "phone": "+78735909615",
       "personalNumber": null,
       "domainCompany": {
         "id": 1000,
@@ -15015,22 +16265,22 @@
       "firstLogin": true
     },
     "manager": {
-      "id": 26429,
-      "login": "longin.volkova85@gmail.com",
+      "id": 26480,
+      "login": "ladimir_kazakova38@gmail.com",
       "photoUuid": null,
       "localPhotoUuid": null,
       "about": null,
-      "firstName": "Мариан",
-      "lastName": "Пахомов",
-      "middleName": "Анатольевна",
-      "company": "ФГУП МайкопЛимитедИнкорпорэйтед",
-      "manager": "Шарова Лора Владиславовна",
-      "email": "longin.volkova85@gmail.com",
-      "department": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+      "firstName": "Парамон",
+      "lastName": "Виноградова",
+      "middleName": "Игнатович",
+      "company": "ТСЖ МокшанИнкорпорэйтедПром",
+      "manager": "Смирнова Глеб Богдановна",
+      "email": "ladimir_kazakova38@gmail.com",
+      "department": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
       "position": null,
       "guid": "undefined",
       "googleId": null,
-      "function": "планировщик",
+      "function": "руководитель",
       "roleId": 3,
       "parentRoleId": null,
       "locked": false,
@@ -15038,7 +16288,7 @@
       "lastIncome": "1900-01-01T00:00:00",
       "status": "ACTIVE",
       "type": "LOCAL",
-      "createdDate": "2025-04-11T11:47:37.541141307",
+      "createdDate": "2025-04-11T13:12:56.2425586",
       "created": 0,
       "planned": 0,
       "finished": 0,
@@ -15046,10 +16296,10 @@
       "authorities": [
         "TOPIC_SCORM_DELETE",
         "DATALENS_READ",
-        "TOPIC_EXECUTIVE_TASKS_UPDATE",
         "TOPIC_BLOCK_TYPE_READ",
-        "STUDY_PLAN_CREATE_BY_USER",
+        "TOPIC_EXECUTIVE_TASKS_UPDATE",
         "COMPILATION_RESTORE",
+        "STUDY_PLAN_CREATE_BY_USER",
         "COMPILATION_COMMENT_DELETE",
         "TOPIC_TYPEFORM_READ",
         "NEWS_GET",
@@ -15062,9 +16312,9 @@
         "ACCESS_TO_ADMIN_USERS",
         "TOPIC_READ",
         "EXPORT_TOPIC_EXECUTIVE_RESULTS",
+        "SURVEY_READ",
         "TOPIC_BLOCK_EXECUTIVE_TASK_READ",
         "SEARCH_READ",
-        "SURVEY_READ",
         "CUSTOM_FIELD_VALUES_READ",
         "LOCALE_READ",
         "ACCESS_TO_ADMIN_TOPIC_INSPECTION",
@@ -15079,9 +16329,9 @@
         "ROLE_READ",
         "STUDY_PLAN_READ",
         "TOPIC_LEVEL_READ",
-        "BOOK_ADDRESS_FIND",
         "NOTIFICATION_UPDATE_TO_READ",
         "FEE_BASED_COURSE_COMMENT_CREATE",
+        "BOOK_ADDRESS_FIND",
         "TOPIC_VISIBILITY_FILTER_READ",
         "TOPIC_TILDA_DELETE",
         "TOPIC_TEST_INTERACT",
@@ -15095,16 +16345,16 @@
         "TOPIC_TILDA_INTERACT",
         "DIAGNOSTIC_COMPETENCE_READ",
         "TOPIC_EXECUTIVE_TASKS_DELETE",
-        "BOOK_ADDRESS_FIND_ADDRESS",
         "SKILL_READ",
+        "BOOK_ADDRESS_FIND_ADDRESS",
         "TOPIC_PRESENTATION_CREATE",
         "ACCESS_TO_TRACKS",
         "TOPIC_FILES_EXPORT",
         "FAQ_READ",
         "TOPIC_TILDA_UPDATE",
         "MENTOR_COMMENT_CREATE",
-        "AUTHOR_CREATE",
         "PURPOSE_READ",
+        "AUTHOR_CREATE",
         "TOPIC_BLOCK_EXECUTIVE_TASK_CREATE",
         "FUNCTION_INTERNAL_READ",
         "TOPIC_COMMENT_READ",
@@ -15115,8 +16365,8 @@
         "FEE_BASED_COURSE_COMMENT_DELETE",
         "STUDY_PLAN_CREATE_BY_ADMIN",
         "NEWS_COMMENT_CREATE",
-        "CAREER_PLAN_ACCESS",
         "COMPETENCE_READ",
+        "CAREER_PLAN_ACCESS",
         "POSITIONS_READ",
         "TOPIC_TILDA_CREATE",
         "TOPIC_SCORM_UPDATE",
@@ -15126,8 +16376,8 @@
         "AUTHOR_UPDATE",
         "MENTEE_CREATE_BY_USER",
         "NEWS_CREATE",
-        "TOPIC_EXECUTIVE_ANSWER_CREATE",
         "DIAGNOSTIC_ATTEMPT_CREATE",
+        "TOPIC_EXECUTIVE_ANSWER_CREATE",
         "TOPIC_TEST_DELETE",
         "MENTOR_READ_BY_USER",
         "DOMAIN_USER_READ",
@@ -15136,8 +16386,8 @@
         "USER_INFO_READ",
         "TOPIC_SCORM_CREATE",
         "TOPIC_EXISTING_MATERIAL_UPDATE",
-        "SKILL_USER_INTERACT",
         "TOPIC_VIDEO_DELETE",
+        "SKILL_USER_INTERACT",
         "FEE_BASED_COURSE_REQUEST_READ",
         "USER_UPDATE",
         "MENTOR_GRATITUDE_READ",
@@ -15148,23 +16398,23 @@
         "FILE_CREATE",
         "STUDY_PLAN_UPDATE_BY_USER",
         "TOPIC_PRESENTATION_UPDATE",
-        "CUSTOM_FIELD_READ",
         "TOPIC_BLOCK_EXECUTIVE_TASK_DELETE",
+        "CUSTOM_FIELD_READ",
         "COMPETENCE_GROUP_READ",
         "CAREER_POSITION_READ",
-        "NEWS_RATE",
         "TOPIC_CATEGORY_READ",
+        "NEWS_RATE",
         "TOPIC_TEST_CREATE",
         "THEME_READ",
-        "MENTOR_CREATE_BY_USER",
         "ACCESS_TO_ADMIN_APPROVE",
+        "MENTOR_CREATE_BY_USER",
         "FEE_BASED_COURSE_REQUEST_INTERACT",
         "TOPIC_ANSWER_READ",
         "TOPIC_PRESENTATION_READ",
         "TOPIC_ARTICLE_CREATE",
         "STUDY_PLAN_DELETE_BY_USER",
-        "FILE_READ",
         "MENTOR_GRATITUDE_UPDATE",
+        "FILE_READ",
         "FEE_BASED_COURSE_COMMENT_READ",
         "BOOK_ADDRESS_ALL",
         "FEE_BASED_COURSE_EVENT_RESEND_MAIL",
@@ -15182,15 +16432,15 @@
         "TOPIC_VISIBILITY_FILTER_DELETE",
         "TOPIC_SCORM_READ",
         "MENTOR_COMMENT_UPDATE",
+        "TOPIC_EXISTING_MATERIAL_INTERACT",
         "FEE_BASED_COURSE_EVENT_MANAGE",
         "TOPIC_EXECUTIVE_TASKS_CREATE",
-        "TOPIC_EXISTING_MATERIAL_INTERACT",
         "TOPIC_VISIBILITY_FILTER_CREATE",
         "AUTHOR_DELETE",
         "TOPIC_MANAGE",
         "LOG_MATERIAL_READ",
-        "STUDY_PLAN_DELETE_BY_ADMIN",
         "ACCESS_TO_ADMIN_MATERIALS",
+        "STUDY_PLAN_DELETE_BY_ADMIN",
         "TOPIC_BLOCK_UPDATE",
         "TOPIC_PRESENTATION_INTERACT",
         "ACCESS_TO_ADMIN_PURPOSE",
@@ -15201,32 +16451,32 @@
         "NEWS_VIEW",
         "PRODUCT_USER",
         "STUDY_PLAN_COMMENT_READ",
-        "TOPIC_QUESTION_READ",
         "TOPIC_COMMENT_UPDATE",
+        "TOPIC_QUESTION_READ",
         "TOPIC_TILDA_READ",
         "MENTOR_COMMENT_DELETE",
         "LANGUAGE_UPDATE",
         "TOPIC_VIDEO_INTERACT",
         "COMPANY_USERS_COUNT_READ",
         "FEE_BASED_COURSE_REQUEST_UPDATE",
-        "TOPIC_CREATE",
         "USER_REWARD_ACCESS",
-        "DIAGNOSTIC_ATTEMPT_SELF_READ",
+        "TOPIC_CREATE",
         "MENTOR_COMMENT_READ",
+        "DIAGNOSTIC_ATTEMPT_SELF_READ",
         "COMPILATION_COMMENT_UPDATE",
         "MENTEE_STATUS_READ_BY_USER",
         "TOPIC_EXECUTIVE_ANSWER_UPDATE",
-        "TOPIC_TYPEFORM_CREATE",
         "USER_TOPICS_READ",
+        "TOPIC_TYPEFORM_CREATE",
         "ACCESS_TO_ADMIN_PROFILE",
-        "MAIL_REMIND",
         "FEE_BASED_COURSE_REQUEST_MANAGE",
+        "MAIL_REMIND",
         "USER_READ",
         "TOPIC_TYPE_LABEL_READ",
         "TOPIC_TYPEFORM_UPDATE",
         "TOPIC_COMMENT_DELETE_BY_USER",
-        "POSITION_INTERNAL_READ",
         "BANNERS_READ",
+        "POSITION_INTERNAL_READ",
         "STUDY_PLAN_COMMENT_CREATE",
         "TOPIC_CHAPTER_READ",
         "ACCESS_TO_ADMIN_FROM_USERS",
@@ -15238,39 +16488,39 @@
         "COMPILATION_COMMENT_READ",
         "TOPIC_TYPE_READ",
         "DIAGNOSTIC_QUESTIONS_TO_PASS_READ",
-        "ACCESS_TO_USERS_MYPOLLS",
         "COMPILATION_COMMENT_CREATE",
+        "ACCESS_TO_USERS_MYPOLLS",
         "STUDY_PLAN_INFO_READ",
         "TOPIC_ARTICLE_DELETE",
         "ALPINA_TOKEN",
         "TAG_READ",
-        "TOPIC_COMMENT_CREATE",
         "MENTOR_COMMENT_RESTORE",
+        "TOPIC_COMMENT_CREATE",
         "CONVENTUS_RESULTS_READ",
         "TRACK_READ",
         "ACCESS_TO_ADMIN_MATERIALS_LOGGING",
-        "EXPORT_LOG_MATERIAL",
         "USER_TOPICS_INTERACT",
+        "EXPORT_LOG_MATERIAL",
         "INCOME_INTERACT",
         "TOPIC_VIDEO_READ",
-        "TOPIC_ARTICLE_READ",
         "PURPOSE_EXPORT",
         "MENTOR_UPDATE_BY_USER",
+        "TOPIC_ARTICLE_READ",
         "NOTIFICATION_BODY_READ",
         "NEWS_COMMENT_READ",
-        "FEE_BASED_COURSE_EVENT_READ",
         "NEWS_COMMENT_RESTORE",
+        "FEE_BASED_COURSE_EVENT_READ",
         "FEE_BASED_COURSE_COMMENT_UPDATE"
       ],
       "managers": [
         {
-          "id": 26425,
-          "userId": 26425,
-          "login": "anzhelika_samoilov31@mail.ru",
-          "firstName": "Лора",
-          "lastName": "Шарова",
-          "middleName": "Владиславовна",
-          "fullName": "Шарова Лора Владиславовна"
+          "id": 26477,
+          "userId": 26477,
+          "login": "pimen_veselov60@gmail.com",
+          "firstName": "Глеб",
+          "lastName": "Смирнова",
+          "middleName": "Богдановна",
+          "fullName": "Смирнова Глеб Богдановна"
         }
       ],
       "inPlan": false,
@@ -15281,16 +16531,16 @@
       "blockingDate": null,
       "functionInternalDto": null,
       "departmentInternalDto": {
-        "id": 8507,
-        "name": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+        "id": 8518,
+        "name": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
         "companyId": 1000,
         "limitCost": 0
       },
       "language": "ru_RU",
-      "location": "Ачхой Мартан",
+      "location": "Ессентуки",
       "startOfJob": null,
       "purpose": null,
-      "phone": "+79676752052",
+      "phone": "+70742058557",
       "personalNumber": null,
       "domainCompany": {
         "id": 1000,
@@ -15323,22 +16573,22 @@
       "firstLogin": true
     },
     "user": {
-      "id": 26428,
-      "login": "khristofor_krylova@hotmail.com",
+      "id": 26479,
+      "login": "ermolai3@yandex.ru",
       "photoUuid": null,
       "localPhotoUuid": null,
       "about": null,
-      "firstName": "Ираида",
-      "lastName": "Бирюков",
-      "middleName": "Гурьевич",
-      "company": "ГУП ИнкорпорэйтедЛимитедЛимитед",
-      "manager": "Шарова Лора Владиславовна",
-      "email": "khristofor_krylova@hotmail.com",
-      "department": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+      "firstName": "Агап",
+      "lastName": "Макаров",
+      "middleName": "Яковлевич",
+      "company": "ЗАО ТрейдИнкорпорэйтед",
+      "manager": "Смирнова Глеб Богдановна",
+      "email": "ermolai3@yandex.ru",
+      "department": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
       "position": null,
       "guid": "undefined",
       "googleId": null,
-      "function": "архитектор",
+      "function": "сотрудник",
       "roleId": 4,
       "parentRoleId": null,
       "locked": false,
@@ -15346,7 +16596,7 @@
       "lastIncome": "1900-01-01T00:00:00",
       "status": "ACTIVE",
       "type": "LOCAL",
-      "createdDate": "2025-04-11T11:47:37.539143541",
+      "createdDate": "2025-04-11T13:12:56.238367444",
       "created": 0,
       "planned": 0,
       "finished": 0,
@@ -15358,10 +16608,10 @@
         "MENTOR_CREATE_BY_USER",
         "FEE_BASED_COURSE_REQUEST_INTERACT",
         "TOPIC_ANSWER_READ",
-        "TOPIC_PRESENTATION_READ",
         "TOPIC_EXECUTIVE_TASKS_UPDATE",
-        "COMPILATION_RESTORE",
+        "TOPIC_PRESENTATION_READ",
         "STUDY_PLAN_CREATE_BY_USER",
+        "COMPILATION_RESTORE",
         "COMPILATION_COMMENT_DELETE",
         "TOPIC_TYPEFORM_READ",
         "NEWS_GET",
@@ -15377,16 +16627,16 @@
         "TOPIC_COMMENT_REPLY",
         "BOOK_ADDRESS_FREE",
         "TOPIC_EXECUTIVE_TASKS_READ",
-        "SURVEY_READ",
         "TOPIC_SCORM_INTERACT",
-        "SEARCH_READ",
         "TOPIC_BLOCK_EXECUTIVE_TASK_READ",
+        "SURVEY_READ",
+        "SEARCH_READ",
         "TOPIC_SCORM_READ",
         "MENTOR_COMMENT_UPDATE",
-        "CUSTOM_FIELD_VALUES_READ",
         "FEE_BASED_COURSE_EVENT_MANAGE",
-        "TOPIC_EXISTING_MATERIAL_INTERACT",
         "TOPIC_EXECUTIVE_TASKS_CREATE",
+        "TOPIC_EXISTING_MATERIAL_INTERACT",
+        "CUSTOM_FIELD_VALUES_READ",
         "AUTHOR_DELETE",
         "LOCALE_READ",
         "FEE_BASED_COURSE_REQUEST_COST_READ",
@@ -15394,10 +16644,10 @@
         "TOPIC_PRESENTATION_INTERACT",
         "NEWS_COMMENT_UPDATE",
         "NOTIFICATION_READ",
-        "DEPARTMENT_INTERNAL_READ",
         "TOPIC_TEST_READ",
-        "COMPILATION_READ",
+        "DEPARTMENT_INTERNAL_READ",
         "AUTHOR_READ",
+        "COMPILATION_READ",
         "NEWS_VIEW",
         "TOPIC_LEVEL_READ",
         "STUDY_PLAN_READ",
@@ -15406,8 +16656,8 @@
         "PRODUCT_USER",
         "TOPIC_TEST_INTERACT",
         "MENTEE_READ_BY_USER",
-        "TOPIC_COMMENT_UPDATE",
         "TOPIC_QUESTION_READ",
+        "TOPIC_COMMENT_UPDATE",
         "BOOK_ADDRESS_GET_ADDRESS_CURRENT_USER",
         "TOPIC_TILDA_READ",
         "SECTION_READ",
@@ -15415,10 +16665,10 @@
         "MENTOR_COMMENT_DELETE",
         "LANGUAGE_UPDATE",
         "TOPIC_VIDEO_INTERACT",
-        "TOPIC_CREATE",
         "USER_REWARD_ACCESS",
-        "MENTOR_COMMENT_READ",
+        "TOPIC_CREATE",
         "DIAGNOSTIC_ATTEMPT_SELF_READ",
+        "MENTOR_COMMENT_READ",
         "COMPILATION_COMMENT_UPDATE",
         "MENTEE_STATUS_READ_BY_USER",
         "TOPIC_ARTICLE_INTERACT",
@@ -15435,8 +16685,8 @@
         "FAQ_READ",
         "TOPIC_TYPE_LABEL_READ",
         "TOPIC_COMMENT_DELETE_BY_USER",
-        "BANNERS_READ",
         "POSITION_INTERNAL_READ",
+        "BANNERS_READ",
         "MENTOR_COMMENT_CREATE",
         "AUTHOR_CREATE",
         "TOPIC_CHAPTER_READ",
@@ -15453,8 +16703,8 @@
         "TOPIC_COMMENT_RESTORE",
         "COMPETENCE_READ",
         "POSITIONS_READ",
-        "TOPIC_TYPE_READ",
         "CERTIFICATES_READ",
+        "TOPIC_TYPE_READ",
         "COMPILATION_COMMENT_READ",
         "BOOK_ADDRESS_UPDATE",
         "DIAGNOSTIC_QUESTIONS_TO_PASS_READ",
@@ -15467,12 +16717,12 @@
         "TOPIC_EXECUTIVE_ANSWER_CREATE",
         "DIAGNOSTIC_ATTEMPT_CREATE",
         "MENTOR_READ_BY_USER",
-        "NEWS_GET_FILTER",
         "STUDY_PLAN_INFO_READ",
+        "NEWS_GET_FILTER",
         "ALPINA_TOKEN",
         "TAG_READ",
-        "MENTOR_COMMENT_RESTORE",
         "TOPIC_COMMENT_CREATE",
+        "MENTOR_COMMENT_RESTORE",
         "CONVENTUS_RESULTS_READ",
         "SKILL_USER_INTERACT",
         "TRACK_READ",
@@ -15482,14 +16732,14 @@
         "INCOME_INTERACT",
         "LANGUAGE_READ",
         "TOPIC_VIDEO_READ",
-        "TOPIC_ARTICLE_READ",
         "MENTOR_UPDATE_BY_USER",
-        "FEE_BASED_COURSE_EVENT_ADD",
+        "TOPIC_ARTICLE_READ",
         "COMPILATION_FAVORITE_INTERACT",
+        "FEE_BASED_COURSE_EVENT_ADD",
         "NOTIFICATION_BODY_READ",
         "NEWS_COMMENT_RESTORE",
-        "FEE_BASED_COURSE_EVENT_READ",
         "GET_MENTORING_COMPANY_SETTINGS",
+        "FEE_BASED_COURSE_EVENT_READ",
         "NEWS_COMMENT_READ",
         "FILE_CREATE",
         "STUDY_PLAN_UPDATE_BY_USER",
@@ -15499,13 +16749,13 @@
       ],
       "managers": [
         {
-          "id": 26425,
-          "userId": 26425,
-          "login": "anzhelika_samoilov31@mail.ru",
-          "firstName": "Лора",
-          "lastName": "Шарова",
-          "middleName": "Владиславовна",
-          "fullName": "Шарова Лора Владиславовна"
+          "id": 26477,
+          "userId": 26477,
+          "login": "pimen_veselov60@gmail.com",
+          "firstName": "Глеб",
+          "lastName": "Смирнова",
+          "middleName": "Богдановна",
+          "fullName": "Смирнова Глеб Богдановна"
         }
       ],
       "inPlan": false,
@@ -15516,16 +16766,16 @@
       "blockingDate": null,
       "functionInternalDto": null,
       "departmentInternalDto": {
-        "id": 8507,
-        "name": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+        "id": 8518,
+        "name": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
         "companyId": 1000,
         "limitCost": 0
       },
       "language": "ru_RU",
-      "location": "Серафимович",
+      "location": "Городовиковск",
       "startOfJob": null,
       "purpose": null,
-      "phone": "+74070553705",
+      "phone": "+77060892881",
       "personalNumber": null,
       "domainCompany": {
         "id": 1000,
@@ -15558,22 +16808,22 @@
       "firstLogin": true
     },
     "bannedUser": {
-      "id": 26426,
-      "login": "aristarkh58@ya.ru",
+      "id": 26478,
+      "login": "arsenii39@yandex.ru",
       "photoUuid": null,
       "localPhotoUuid": null,
       "about": null,
-      "firstName": "Раиса",
-      "lastName": "Самойлова",
-      "middleName": "Вениаминовна",
-      "company": "ТСЖ АчинскИнкорпорэйтед",
-      "manager": "Шарова Лора Владиславовна",
-      "email": "aristarkh58@ya.ru",
-      "department": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+      "firstName": "Гурий",
+      "lastName": "Борисова",
+      "middleName": "Рудольфовна",
+      "company": "ПАО Гущин",
+      "manager": "Смирнова Глеб Богдановна",
+      "email": "arsenii39@yandex.ru",
+      "department": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
       "position": null,
       "guid": "undefined",
       "googleId": null,
-      "function": "планировщик",
+      "function": "сотрудник",
       "roleId": 2,
       "parentRoleId": null,
       "locked": false,
@@ -15581,7 +16831,7 @@
       "lastIncome": "1900-01-01T00:00:00",
       "status": "ACTIVE",
       "type": "LOCAL",
-      "createdDate": "2025-04-11T11:47:37.524719567",
+      "createdDate": "2025-04-11T13:12:56.238125384",
       "created": 0,
       "planned": 0,
       "finished": 0,
@@ -15603,15 +16853,15 @@
         "PRODUCT_VISIBILITY_SET",
         "STUDY_PLAN_UPDATE_BY_ADMIN",
         "TAG_CREATE",
-        "EXPORT_TOPIC_EXECUTIVE_RESULTS",
         "MERIT_READ",
+        "EXPORT_TOPIC_EXECUTIVE_RESULTS",
         "DIAGNOSTIC_SETTINGS_UPDATE",
-        "PROJECT_360_DEACTIVATE",
         "SEARCH_READ",
-        "QUESTION_BANK_CREATE",
         "TOPIC_BLOCK_EXECUTIVE_TASK_READ",
-        "TAG_DELETE",
+        "QUESTION_BANK_CREATE",
+        "PROJECT_360_DEACTIVATE",
         "ACCESS_TO_ADMIN_TOPIC_INSPECTION",
+        "TAG_DELETE",
         "LOCALE_READ",
         "TRACK_UPDATE",
         "TOPIC_PRESENTATION_DELETE",
@@ -15679,28 +16929,28 @@
         "COMPILATION_UPDATE",
         "NEWS_VISIBILITY_FILTER_DELETE",
         "USER_UPDATE",
-        "MENTOR_CREATE_BY_ADMIN",
         "MENTOR_GRATITUDE_READ",
+        "MENTOR_CREATE_BY_ADMIN",
         "TOPIC_CHAPTER_DELETE",
         "LANGUAGE_READ",
-        "COMPILATION_FAVORITE_INTERACT",
         "FEE_BASED_COURSE_EVENT_ADD",
+        "COMPILATION_FAVORITE_INTERACT",
         "GET_MENTORING_COMPANY_SETTINGS",
         "COMPETENCE_UPDATE",
         "TOPIC_BLOCK_EXECUTIVE_TASK_DELETE",
         "TOPIC_TEST_CREATE",
         "THEME_READ",
         "NEWS_ADMIN_GET_FILTER",
-        "SURVEY_CREATE",
         "MENTOR_CREATE_BY_USER",
+        "SURVEY_CREATE",
         "QUESTION_BANK_UPDATE",
         "PROJECT_360_CREATE",
         "TOPIC_ANSWER_READ",
-        "MENTEE_STATUS_UPDATE_BY_ADMIN",
         "TOPIC_PRESENTATION_READ",
+        "MENTEE_STATUS_UPDATE_BY_ADMIN",
+        "USER_SIGN_UP_LOAD",
         "NEWS_ADMIN_ALL_STATUS",
         "THEME_DELETE",
-        "USER_SIGN_UP_LOAD",
         "NEWS_VISIBILITY_FILTER_CREATE",
         "STUDY_PLAN_DELETE_BY_USER",
         "MENTOR_GRATITUDE_UPDATE",
@@ -15712,10 +16962,10 @@
         "PRODUCT_ADMIN_GET_COST_RANGE",
         "TRACK_PLAN_EDITE",
         "FEE_BASED_COURSE_EVENT_READ_ADMIN",
-        "PRODUCT_ADMIN_GET_NAME_LIST",
         "Получение SSO токена для своего аккаунта в alpina",
-        "DIAGNOSTIC_SETTINGS_READ",
+        "PRODUCT_ADMIN_GET_NAME_LIST",
         "TOPIC_COMMENT_REPLY",
+        "DIAGNOSTIC_SETTINGS_READ",
         "BOOK_ADDRESS_FREE",
         "DEPARTMENT_INTERNAL_UPDATE",
         "TOPIC_EXECUTIVE_TASKS_READ",
@@ -15731,16 +16981,16 @@
         "TOPIC_PRESENTATION_INTERACT",
         "COMPILATION_READ",
         "NEWS_VIEW",
-        "PRODUCT_USER",
         "CUSTOM_FIELD_VALUES_CREATE",
+        "PRODUCT_USER",
         "STUDY_PLAN_COMMENT_READ",
         "LOG_SYSTEM_READ",
         "CONVENTUS_ROLES_READ",
-        "DIAGNOSTIC_COMPETENCE_OPTIONS_DELETE",
         "ACCESS_TO_ADMIN_EVENT_CALENDAR",
+        "DIAGNOSTIC_COMPETENCE_OPTIONS_DELETE",
         "ACCESS_TO_QUESTION_BANK",
-        "TOPIC_COMMENT_UPDATE",
         "BONUS_UPDATE",
+        "TOPIC_COMMENT_UPDATE",
         "DIAGNOSTIC_QUESTION_UPDATE",
         "PRODUCT_ADMIN_CREATE",
         "FEE_BASED_COURSE_REQUEST_UPDATE",
@@ -15751,10 +17001,10 @@
         "EXPORT_MASS_FILTER_USERS",
         "DIAGNOSTIC_COMPETENCE_OPTIONS_UPDATE",
         "DIAGNOSTIC_QUESTIONS_TO_MANAGE_READ",
-        "DIAGNOSTIC_QUESTION_ANSWER_CREATE",
         "USER_READ",
-        "TOPIC_TYPEFORM_UPDATE",
+        "DIAGNOSTIC_QUESTION_ANSWER_CREATE",
         "PROFILE_TAB_INTERACT",
+        "TOPIC_TYPEFORM_UPDATE",
         "BANNERS_READ",
         "PRODUCT_ADMIN_GET_ORDER_STATUS_LIST_BY_ID",
         "BOOK_ADDRESS_CREATE",
@@ -15784,8 +17034,8 @@
         "EXPORT_LOG_MATERIAL",
         "TRACK_CREATE",
         "TOPIC_VIDEO_READ",
-        "MENTOR_UPDATE_BY_USER",
         "TOPIC_ARTICLE_READ",
+        "MENTOR_UPDATE_BY_USER",
         "FEE_BASED_COURSE_EVENT_READ",
         "FEE_BASED_COURSE_COMMENT_UPDATE",
         "S3_DELETE",
@@ -15810,10 +17060,10 @@
         "FEE_BASED_COURSE_REQUEST_COST_READ",
         "EXPORT_TOPIC_BLOCK_RESULTS",
         "NEWS_COMMENT_UPDATE",
-        "STUDY_PLAN_READ",
         "QUESTION_BANK_FILTER",
-        "FEE_BASED_COURSE_COMMENT_CREATE",
+        "STUDY_PLAN_READ",
         "NOTIFICATION_UPDATE_TO_READ",
+        "FEE_BASED_COURSE_COMMENT_CREATE",
         "TOPIC_VISIBILITY_FILTER_READ",
         "ACCESS_TO_ADMIN_SHOP",
         "SURVEY_UPDATE",
@@ -15839,8 +17089,8 @@
         "FEE_BASED_COURSE_REQUEST_PARAM_READ",
         "TOPIC_EXISTING_MATERIAL_CREATE",
         "FEE_BASED_COURSE_COMMENT_DELETE",
-        "COMPETENCE_READ",
         "CAREER_PLAN_ACCESS",
+        "COMPETENCE_READ",
         "POSITIONS_READ",
         "TOPIC_SCORM_UPDATE",
         "CERTIFICATES_READ",
@@ -15848,14 +17098,14 @@
         "TAG_UPDATE",
         "TRACK_ADD",
         "AUTHOR_UPDATE",
-        "PRODUCT_VISIBILITY_GET",
         "MENTEE_CREATE_BY_USER",
+        "PRODUCT_VISIBILITY_GET",
         "TOPIC_EXECUTIVE_ANSWER_CREATE",
         "COMPETENCE_GROUP_CREATE",
         "TOPIC_TEST_DELETE",
         "CUSTOM_FIELD_VALUES_DELETE",
-        "USER_EXPORT",
         "NOTIFICATION_CREATE",
+        "USER_EXPORT",
         "INCOME_CREATE",
         "TOPIC_VIDEO_DELETE",
         "PRODUCT_ADMIN_GET_ORDER_LIST_FILTER",
@@ -15867,8 +17117,8 @@
         "TOPIC_PRESENTATION_UPDATE",
         "TOPIC_BLOCK_CREATE",
         "CUSTOM_FIELD_READ",
-        "COMPETENCE_GROUP_READ",
         "CAREER_POSITION_READ",
+        "COMPETENCE_GROUP_READ",
         "TOPIC_CATEGORY_READ",
         "NEWS_RATE",
         "ACCESS_TO_ADMIN_APPROVE",
@@ -15893,11 +17143,11 @@
         "TOPIC_EXISTING_MATERIAL_INTERACT",
         "TOPIC_EXECUTIVE_TASKS_CREATE",
         "TOPIC_LEVEL_UPDATE",
-        "AUTHOR_DELETE",
         "TRACK_DELETE",
+        "AUTHOR_DELETE",
         "THEME_CREATE",
-        "DIAGNOSTIC_QUESTION_ANSWER_DELETE",
         "STUDY_PLAN_DELETE_BY_ADMIN",
+        "DIAGNOSTIC_QUESTION_ANSWER_DELETE",
         "NEWS_VISIBILITY_FILTER_READ",
         "ACCESS_TO_ADMIN_PURPOSE",
         "NOTIFICATION_READ",
@@ -15929,8 +17179,8 @@
         "USER_TOPICS_READ",
         "TOPIC_TYPEFORM_CREATE",
         "ACCESS_TO_ADMIN_PROFILE",
-        "FEE_BASED_COURSE_REQUEST_MANAGE",
         "MAIL_REMIND",
+        "FEE_BASED_COURSE_REQUEST_MANAGE",
         "QUESTION_BANK_IMPORT",
         "PRODUCT_ADMIN_UPDATE_STATUS",
         "DIAGNOSTIC_QUESTION_CREATE",
@@ -15940,22 +17190,22 @@
         "CAREER_POSITION_CREATE",
         "TRAJECTORY_USERS_MANAGE",
         "ACCESS_TO_ADMIN_FROM_USERS",
-        "COMPILATION_DELETE",
         "CONVENTUS_QUIZ_INTERACT",
+        "COMPILATION_DELETE",
         "S3_CREATE",
         "ADD_QUESTION_FROM_QUESTION_BANK",
         "TOPIC_COMMENT_RESTORE",
         "EXPORT_MENTOR",
         "TOPIC_TYPE_READ",
-        "DIAGNOSTIC_QUESTIONS_TO_PASS_READ",
         "TOPIC_UPDATE",
+        "DIAGNOSTIC_QUESTIONS_TO_PASS_READ",
         "BONUS_READ",
         "ACCESS_TO_ADMIN_COLLECTIONS",
         "MENTOR_READ_BY_ADMIN",
         "CUSTOM_FIELD_VALUES_UPDATE",
         "STUDY_PLAN_INFO_READ",
-        "PROJECT_360_UPDATE",
         "PRODUCT_ADMIN_UPDATE",
+        "PROJECT_360_UPDATE",
         "DEPARTMENT_INTERNAL_CREATE",
         "TOPIC_COMMENT_CREATE",
         "MENTOR_COMMENT_RESTORE",
@@ -15975,13 +17225,13 @@
       ],
       "managers": [
         {
-          "id": 26425,
-          "userId": 26425,
-          "login": "anzhelika_samoilov31@mail.ru",
-          "firstName": "Лора",
-          "lastName": "Шарова",
-          "middleName": "Владиславовна",
-          "fullName": "Шарова Лора Владиславовна"
+          "id": 26477,
+          "userId": 26477,
+          "login": "pimen_veselov60@gmail.com",
+          "firstName": "Глеб",
+          "lastName": "Смирнова",
+          "middleName": "Богдановна",
+          "fullName": "Смирнова Глеб Богдановна"
         }
       ],
       "inPlan": false,
@@ -15992,16 +17242,16 @@
       "blockingDate": null,
       "functionInternalDto": null,
       "departmentInternalDto": {
-        "id": 8507,
-        "name": "Центральный операционный планировщик9855805806983193328718168552209569088127213357467437104364086608228522251564311887473048095864862816",
+        "id": 8518,
+        "name": "Глобальный страховой администратор7249487511174334120669532626409447333978747533220211318066086242988663896118055454203426028207365722",
         "companyId": 1000,
         "limitCost": 0
       },
       "language": "ru_RU",
-      "location": "Новокузнецк",
+      "location": "Тырныауз",
       "startOfJob": null,
       "purpose": null,
-      "phone": "+79220209191",
+      "phone": "+74537709105",
       "personalNumber": null,
       "domainCompany": {
         "id": 1000,
@@ -16038,9 +17288,9 @@
     "bookTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77374,
-      "publicUrl": "https://kampus.local/collection-topics/77374",
-      "name": "Don Quixote",
+      "id": 77457,
+      "publicUrl": "https://kampus.local/collection-topics/77457",
+      "name": "The Picture of Dorian Gray",
       "type": {
         "id": 16,
         "name": "Книга",
@@ -16053,13 +17303,13 @@
         "name": "Книга",
         "topicTypeId": 16
       },
-      "cost": 731,
+      "cost": 689,
       "event": null,
       "viewers": {
         "count": 1,
         "viewed": false
       },
-      "description": "сфера сфера на обеспечение стороны обеспечивает а",
+      "description": "участия же внедрения участниками повседневной прежде",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -16093,10 +17343,10 @@
       ],
       "links": [
         {
-          "id": 37795,
-          "name": "https://raw-duffel.edo",
+          "id": 37879,
+          "name": "https://fantastic-rationale.press/",
           "additionalName": null,
-          "url": "https://raw-duffel.edo",
+          "url": "https://fantastic-rationale.press/",
           "undeletable": false
         }
       ],
@@ -16126,7 +17376,7 @@
       "startDate": null,
       "endDate": null,
       "meetPlace": null,
-      "publisher": "очевидна современного инновационный соответствующей концепция равным выполнять гражданского активизации также позволяет",
+      "publisher": "административных же потребностям проблем рамки определения принимаемых кругу формированию роль значение",
       "issued": "1999-01-01",
       "rank": null,
       "qiwi": false,
@@ -16137,30 +17387,30 @@
       "comment": null,
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -16174,7 +17424,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://raw-duffel.edo",
+      "firstLink": "https://fantastic-rationale.press/",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -16202,14 +17452,14 @@
       "careerPlanDto": null,
       "webinarCreateEventResponse": null,
       "certificateDto": {
-        "name": "Портмоне45778",
+        "name": "Портмоне94618",
         "templateId": 6,
         "type": "Сертификат",
         "confirmText": "Настоящий сертификат подтверждает, что",
         "completeText": "успешно прошел(а) программу обучения",
         "base64Logo1": "blob:https://admin.kampus.local/123",
         "base64Logo2": null,
-        "id": "439",
+        "id": "450",
         "curNumber": 100,
         "maxNumber": 1000,
         "minNumber": 100,
@@ -16225,9 +17475,9 @@
     "videoTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77379,
-      "publicUrl": "https://kampus.local/collection-topics/77379",
-      "name": "The Heart is a Lonely Hunter",
+      "id": 77459,
+      "publicUrl": "https://kampus.local/collection-topics/77459",
+      "name": "The Pilgrim's Progress",
       "type": {
         "id": 4,
         "name": "Видео",
@@ -16246,7 +17496,7 @@
         "count": 1,
         "viewed": false
       },
-      "description": "рост равным также высшего занимаемых создание эксперимент гражданского зависит правительством демократической",
+      "description": "количественный степени участия общественной также материально-технической обуславливает модернизации количественный повышение значимость",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -16280,10 +17530,10 @@
       ],
       "links": [
         {
-          "id": 37800,
-          "name": "https://shrill-scrap.org/",
+          "id": 37876,
+          "name": "https://coarse-tail.org",
           "additionalName": null,
-          "url": "https://shrill-scrap.org/",
+          "url": "https://coarse-tail.org",
           "undeletable": false
         }
       ],
@@ -16313,7 +17563,7 @@
       "startDate": null,
       "endDate": null,
       "meetPlace": null,
-      "publisher": "ЗАО СбытТрейдЛимитед",
+      "publisher": "НКО ТоргГруппГрупп",
       "issued": null,
       "rank": null,
       "qiwi": false,
@@ -16324,30 +17574,30 @@
       "comment": null,
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -16361,7 +17611,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://shrill-scrap.org/",
+      "firstLink": "https://coarse-tail.org",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -16389,14 +17639,14 @@
       "careerPlanDto": null,
       "webinarCreateEventResponse": null,
       "certificateDto": {
-        "name": "Портмоне45778",
+        "name": "Портмоне94618",
         "templateId": 6,
         "type": "Сертификат",
         "confirmText": "Настоящий сертификат подтверждает, что",
         "completeText": "успешно прошел(а) программу обучения",
         "base64Logo1": "blob:https://admin.kampus.local/123",
         "base64Logo2": null,
-        "id": "439",
+        "id": "450",
         "curNumber": 100,
         "maxNumber": 1000,
         "minNumber": 100,
@@ -16412,9 +17662,9 @@
     "articleTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77376,
-      "publicUrl": "https://kampus.local/collection-topics/77376",
-      "name": "Cranford",
+      "id": 77456,
+      "publicUrl": "https://kampus.local/collection-topics/77456",
+      "name": "Dune",
       "type": {
         "id": 15,
         "name": "Статья",
@@ -16433,7 +17683,7 @@
         "count": 1,
         "viewed": false
       },
-      "description": "постоянный укрепления по сущности уточнения внедрения экономической проверки создание опыт прогресса правительством",
+      "description": "широкому консультация новая путь определения а создание предпосылки определения плановых",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -16467,10 +17717,10 @@
       ],
       "links": [
         {
-          "id": 37798,
-          "name": "https://whopping-fundraising.tech/",
+          "id": 37877,
+          "name": "https://cloudy-petal.info",
           "additionalName": null,
-          "url": "https://whopping-fundraising.tech/",
+          "url": "https://cloudy-petal.info",
           "undeletable": false
         }
       ],
@@ -16511,30 +17761,30 @@
       "comment": null,
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -16548,7 +17798,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://whopping-fundraising.tech/",
+      "firstLink": "https://cloudy-petal.info",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -16576,14 +17826,14 @@
       "careerPlanDto": null,
       "webinarCreateEventResponse": null,
       "certificateDto": {
-        "name": "Портмоне45778",
+        "name": "Портмоне94618",
         "templateId": 6,
         "type": "Сертификат",
         "confirmText": "Настоящий сертификат подтверждает, что",
         "completeText": "успешно прошел(а) программу обучения",
         "base64Logo1": "blob:https://admin.kampus.local/123",
         "base64Logo2": null,
-        "id": "439",
+        "id": "450",
         "curNumber": 100,
         "maxNumber": 1000,
         "minNumber": 100,
@@ -16599,9 +17849,9 @@
     "applicationTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77372,
-      "publicUrl": "https://kampus.local/collection-topics/77372",
-      "name": "The Odyssey",
+      "id": 77454,
+      "publicUrl": "https://kampus.local/collection-topics/77454",
+      "name": "Of Mice and Men",
       "type": {
         "id": 5,
         "name": "Приложение",
@@ -16614,13 +17864,13 @@
         "name": "Приложение",
         "topicTypeId": 5
       },
-      "cost": 741,
+      "cost": 874,
       "event": null,
       "viewers": {
         "count": 1,
         "viewed": false
       },
-      "description": "систему высокотехнологичная богатый порядка повседневная активизации общественной социально-экономическое задания намеченных",
+      "description": "изменений принимаемых различных ресурсосберегающих потребностям предложений насущным зависит инновационный нами обеспечение богатый представляет",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -16646,10 +17896,10 @@
       "authors": [],
       "links": [
         {
-          "id": 37793,
-          "name": "https://innocent-produce.org/",
+          "id": 37873,
+          "name": "https://spotless-pharmacopoeia.org/",
           "additionalName": null,
-          "url": "https://innocent-produce.org/",
+          "url": "https://spotless-pharmacopoeia.org/",
           "undeletable": false
         }
       ],
@@ -16690,30 +17940,30 @@
       "comment": null,
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -16727,7 +17977,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://innocent-produce.org/",
+      "firstLink": "https://spotless-pharmacopoeia.org/",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -16755,14 +18005,14 @@
       "careerPlanDto": null,
       "webinarCreateEventResponse": null,
       "certificateDto": {
-        "name": "Портмоне45778",
+        "name": "Портмоне94618",
         "templateId": 6,
         "type": "Сертификат",
         "confirmText": "Настоящий сертификат подтверждает, что",
         "completeText": "успешно прошел(а) программу обучения",
         "base64Logo1": "blob:https://admin.kampus.local/123",
         "base64Logo2": null,
-        "id": "439",
+        "id": "450",
         "curNumber": 100,
         "maxNumber": 1000,
         "minNumber": 100,
@@ -16778,9 +18028,9 @@
     "baseEventTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77375,
-      "publicUrl": "https://kampus.local/collection-topics/77375",
-      "name": "The Remains of the Day",
+      "id": 77458,
+      "publicUrl": "https://kampus.local/collection-topics/77458",
+      "name": "The Color Purple",
       "type": {
         "id": 8,
         "name": "Событие",
@@ -16792,13 +18042,13 @@
         "id": 6,
         "name": "Событие"
       },
-      "cost": 525,
+      "cost": 195,
       "event": null,
       "viewers": {
         "count": 1,
         "viewed": false
       },
-      "description": "системы модернизации поэтапного ресурсосберегающих соответствующей повседневная позиции однако предпосылки",
+      "description": "показывает богатый широким систему на очевидна структура а консультация задания этих",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -16832,10 +18082,10 @@
       ],
       "links": [
         {
-          "id": 37796,
-          "name": "https://pitiful-finger.info/",
+          "id": 37878,
+          "name": "https://shallow-pocket-watch.online",
           "additionalName": null,
-          "url": "https://pitiful-finger.info/",
+          "url": "https://shallow-pocket-watch.online",
           "undeletable": false
         }
       ],
@@ -16865,7 +18115,7 @@
       "startDate": "2025-04-12",
       "endDate": "2025-04-12",
       "meetPlace": null,
-      "publisher": "ПАО Людмила",
+      "publisher": "ИП Соколов",
       "issued": null,
       "rank": null,
       "qiwi": false,
@@ -16873,33 +18123,33 @@
       "videoType": null,
       "topicClass": null,
       "scope": "EXTERNAL",
-      "comment": "особенности анализа социально-ориентированный модели соответствующей концепция значение нашей особенности эксперимент подготовке повседневная",
+      "comment": "социально-экономическое создание кадровой очевидна постоянный модель однако нами другой же",
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -16913,7 +18163,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://pitiful-finger.info/",
+      "firstLink": "https://shallow-pocket-watch.online",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -16924,7 +18174,7 @@
         {
           "startTime": "20:00:00",
           "endTime": "21:00:00",
-          "place": "технологий формировании повышение следует позиции кадровой образом базы качества обеспечение",
+          "place": "за важные значимость повседневной внедрения требует в поэтапного",
           "dates": [
             "2025-04-12"
           ],
@@ -16948,7 +18198,7 @@
         "name": "Русский"
       },
       "followSequence": false,
-      "topicLimit": 218,
+      "topicLimit": 273,
       "isTopicFull": false,
       "careerPlanDto": null,
       "webinarCreateEventResponse": null,
@@ -16976,9 +18226,9 @@
     "eventWithValidationTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77378,
-      "publicUrl": "https://kampus.local/collection-topics/77378",
-      "name": "The Red and the Black",
+      "id": 77455,
+      "publicUrl": "https://kampus.local/collection-topics/77455",
+      "name": "1984",
       "type": {
         "id": 23,
         "name": "Конференция",
@@ -16996,7 +18246,7 @@
         "count": 1,
         "viewed": false
       },
-      "description": "способствует активом требует сфера значение общественной с повышению",
+      "description": "организации следует и оценить целесообразности общественной выполнять равным что качественно",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -17030,10 +18280,10 @@
       ],
       "links": [
         {
-          "id": 37797,
-          "name": "https://infinite-earth.biz/",
+          "id": 37875,
+          "name": "https://proper-plastic.store/",
           "additionalName": null,
-          "url": "https://infinite-earth.biz/",
+          "url": "https://proper-plastic.store/",
           "undeletable": false
         }
       ],
@@ -17063,7 +18313,7 @@
       "startDate": "2025-04-12",
       "endDate": "2025-04-12",
       "meetPlace": null,
-      "publisher": "ЗАО Гурьев",
+      "publisher": "ООО Брагин",
       "issued": null,
       "rank": null,
       "qiwi": false,
@@ -17071,33 +18321,33 @@
       "videoType": null,
       "topicClass": null,
       "scope": "INTERNAL",
-      "comment": "существующий высшего современного что поэтапного разнообразный другой",
+      "comment": "отношении всего прежде рамки прогрессивного и уточнения сомнений прогрессивного деятельности прежде воздействия",
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -17111,7 +18361,7 @@
       "eventCount": 1,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://infinite-earth.biz/",
+      "firstLink": "https://proper-plastic.store/",
       "position": null,
       "pinned": 67,
       "courseActive": true,
@@ -17122,7 +18372,7 @@
         {
           "startTime": "20:00:00",
           "endTime": "21:00:00",
-          "place": "на задача качественно модернизации потребностям повседневная повышению путь",
+          "place": "концепция проверки на что идейные условий определения",
           "dates": [
             "2025-04-12"
           ],
@@ -17172,21 +18422,21 @@
       "sharing": false
     },
     "topicsIds": [
-      77373,
-      77374,
-      77379,
-      77376,
-      77372,
-      77375,
-      77378,
-      77377
+      77453,
+      77457,
+      77459,
+      77456,
+      77454,
+      77458,
+      77455,
+      77460
     ],
     "eventMtsLinkTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77373,
-      "publicUrl": "https://kampus.local/collection-topics/77373",
-      "name": "The Aeneid",
+      "id": 77453,
+      "publicUrl": "https://kampus.local/collection-topics/77453",
+      "name": "The Divine Comedy",
       "type": {
         "id": 8,
         "name": "Событие",
@@ -17198,13 +18448,13 @@
         "id": 6,
         "name": "Событие"
       },
-      "cost": 2601,
+      "cost": 987,
       "event": null,
       "viewers": {
         "count": 1,
         "viewed": false
       },
-      "description": "однако анализа высокотехнологичная оценить формировании показывает значительной организации важные поставленных вызывает",
+      "description": "же однако активом место поставленных значимость",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -17238,10 +18488,10 @@
       ],
       "links": [
         {
-          "id": 37794,
-          "name": "https://sizzling-quinoa.info/",
+          "id": 37874,
+          "name": "https://sunny-calculus.club/",
           "additionalName": null,
-          "url": "https://sizzling-quinoa.info/",
+          "url": "https://sunny-calculus.club/",
           "undeletable": false
         }
       ],
@@ -17271,7 +18521,7 @@
       "startDate": "2025-04-12",
       "endDate": "2025-04-12",
       "meetPlace": null,
-      "publisher": "соображения важную очевидна постоянный реализация занимаемых",
+      "publisher": "прогресса с социально-экономическое значение новая",
       "issued": null,
       "rank": null,
       "qiwi": false,
@@ -17279,33 +18529,33 @@
       "videoType": null,
       "topicClass": null,
       "scope": "INTERNAL",
-      "comment": "прежде представляет специалистов нами значение",
+      "comment": "новая широкому повышение образом гражданского модернизации модернизации последовательного кругу работы",
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -17319,7 +18569,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://sizzling-quinoa.info/",
+      "firstLink": "https://sunny-calculus.club/",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -17330,7 +18580,7 @@
         {
           "startTime": "21:00:00",
           "endTime": "22:00:00",
-          "place": "дальнейшее шагов стороны задач нами прогрессивного информационно-пропогандистское",
+          "place": "структуры проект организационной степени же постоянное забывать общества модернизации",
           "dates": [
             "2025-04-12"
           ],
@@ -17354,37 +18604,37 @@
         "name": "Русский"
       },
       "followSequence": false,
-      "topicLimit": 39,
+      "topicLimit": 50,
       "isTopicFull": false,
       "careerPlanDto": null,
       "webinarCreateEventResponse": [
         {
-          "id": 289,
-          "name": "актуальность вызывает структура активом гражданского забывать отношении по социально-экономическое сфера современного качества влечёт активом",
+          "id": 299,
+          "name": "позиции соображения формированию участия консультация же для вызывает сущности позволяет структура оценить создание",
           "webinarType": "WEBINAR",
           "access": 1,
           "startsAt": "2025-04-12T21:00:00",
           "endsAt": "2025-04-12T22:00:00",
-          "eventSessionId": "1645103147",
-          "eventId": "1945442668",
-          "eventLink": "https://my.mts-link.ru/j/56360995/1945442668/session/1645103147",
-          "topicId": 77373,
-          "plannedInvolvement": "73"
+          "eventSessionId": "201325319",
+          "eventId": "877485171",
+          "eventLink": "https://my.mts-link.ru/j/56360995/877485171/session/201325319",
+          "topicId": 77453,
+          "plannedInvolvement": "58"
         }
       ],
       "certificateDto": {
-        "name": "Портмоне45778",
+        "name": "Портмоне94618",
         "templateId": 6,
         "type": "Сертификат",
         "confirmText": "Настоящий сертификат подтверждает, что",
         "completeText": "успешно прошел(а) программу обучения",
         "base64Logo1": "blob:https://admin.kampus.local/123",
         "base64Logo2": null,
-        "id": "439",
-        "curNumber": 409,
-        "maxNumber": 1960,
-        "minNumber": 409,
-        "series": "4402"
+        "id": "450",
+        "curNumber": 826,
+        "maxNumber": 1237,
+        "minNumber": 826,
+        "series": "1534"
       },
       "rewardsDto": [],
       "competences": null,
@@ -17396,9 +18646,9 @@
     "eCourseTopic": {
       "multiStudyPlan": false,
       "userPlanType": "ADD",
-      "id": 77377,
-      "publicUrl": "https://kampus.local/collection-topics/77377",
-      "name": "Notes from the Underground",
+      "id": 77460,
+      "publicUrl": "https://kampus.local/collection-topics/77460",
+      "name": "The Color Purple",
       "type": {
         "id": 1,
         "name": "Электронный курс",
@@ -17417,7 +18667,7 @@
         "count": 1,
         "viewed": false
       },
-      "description": "обеспечение потребностям место активом место массового анализа рамки образом отношении формированию интересный значение активизации",
+      "description": "общественной следует форм настолько обучения актуальность позиции постоянный поэтапного",
       "coverColor": null,
       "coverFileUuid": null,
       "thumbFileUuid": null,
@@ -17451,10 +18701,10 @@
       ],
       "links": [
         {
-          "id": 37799,
-          "name": "https://remorseful-handle.рф",
+          "id": 37880,
+          "name": "https://deserted-pulse.edo/",
           "additionalName": null,
-          "url": "https://remorseful-handle.рф",
+          "url": "https://deserted-pulse.edo/",
           "undeletable": false
         }
       ],
@@ -17483,8 +18733,8 @@
       "endTime": "22:00:00",
       "startDate": "2025-04-12",
       "endDate": null,
-      "meetPlace": "не сущности определения уровня богатый информационно-пропогандистское задач",
-      "publisher": "общества проект задача опыт поэтапного способствует целесообразности",
+      "meetPlace": "активом порядка забывать соответствующей работы",
+      "publisher": "сомнений следует модели формированию для особенности оценить экономической прогрессивного",
       "issued": null,
       "rank": null,
       "qiwi": false,
@@ -17498,30 +18748,30 @@
       "comment": null,
       "status": "Активен",
       "creBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
       },
       "createdDate": "2025-04-11",
       "modBy": {
-        "id": 26425,
+        "id": 26477,
         "photoUuid": null,
         "localPhotoUuid": null,
-        "lastName": "Шарова",
-        "firstName": "Лора",
-        "middleName": "Владиславовна",
+        "lastName": "Смирнова",
+        "firstName": "Глеб",
+        "middleName": "Богдановна",
         "function": "дизайнер",
         "department": null,
-        "company": "ФГУП Фадеев",
+        "company": "ИП Валентина",
         "status": "ACTIVE",
         "type": "LOCAL",
         "managers": []
@@ -17535,7 +18785,7 @@
       "eventCount": 0,
       "endedCount": 0,
       "score": 0,
-      "firstLink": "https://remorseful-handle.рф",
+      "firstLink": "https://deserted-pulse.edo/",
       "position": null,
       "pinned": 67,
       "courseActive": false,
@@ -17563,14 +18813,14 @@
       "careerPlanDto": null,
       "webinarCreateEventResponse": null,
       "certificateDto": {
-        "name": "Портмоне45778",
+        "name": "Портмоне94618",
         "templateId": 6,
         "type": "Сертификат",
         "confirmText": "Настоящий сертификат подтверждает, что",
         "completeText": "успешно прошел(а) программу обучения",
         "base64Logo1": "blob:https://admin.kampus.local/123",
         "base64Logo2": null,
-        "id": "439",
+        "id": "450",
         "curNumber": 1000,
         "maxNumber": 2000,
         "minNumber": 1000,

@@ -1,0 +1,68 @@
+test-ops:
+  image: mcr.microsoft.com/playwright:v1.51.0-noble
+  tags:
+    - k8s-dev
+  cache:
+    key: '$CI_COMMIT_REF_SLUG'
+    paths:
+      - node_modules/
+  variables:
+    ALLURE_ENDPOINT: 'https://teoriiotpraktikov.qatools.cloud/'
+    ALLURE_PROJECT_ID: '1'
+    ALLURE_RESULTS: '/builds/qa/cloud-playwright/src/report/allure-results'
+    BOT_TOKEN: '7779869356:AAECe0sdrLq0e_EajRHVhgEvu2bGaUdtEv8'
+    CHAT_ID: '-1002691846651'
+    ALLURE_LAUNCH_TAGS: 'medium, smoke'
+  before_script:
+    - apt update
+    - apt install -y jq
+    - npm install -g pnpm@latest
+    - pnpm install
+    - curl -fsSL https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_amd64 -o allurectl
+    - chmod +x allurectl
+  script:
+    - eval $(./allurectl job-run env)
+    - ./allurectl watch -- pnpm run test:smoke || true
+    - ls -la
+    - |
+      filePath="./src/report/allure-resultstest-results.json"
+      if [ -f "$filePath" ]; then
+        PASSED=$(jq '.stats.expected // 0' $filePath)
+        FAILED=$(jq '.stats.unexpected // 0' $filePath)
+        SKIPPED=$(jq '.stats.skipped // 0' $filePath)
+        FLAKY=$(jq '.stats.flaky // 0' $filePath)
+        TOTAL=$((PASSED + FAILED + SKIPPED + FLAKY))
+        export PASSED=$PASSED
+        export FAILED=$FAILED
+        export SKIPPED=$SKIPPED
+        export FLAKY=$FLAKY
+        export TOTAL=$TOTAL
+      else
+        echo "Allure results file not found: $filePath"
+        exit 1
+      fi
+    - |
+      MESSAGE="🧪 Отчет по тестам:
+      - 📦 Репозиторий: ${COMPANY_NAME:-$CI_PROJECT_NAME}
+      - 🌿 Ветка: ${BRANCH:-$CI_COMMIT_REF_NAME}
+      - 📝 Название коммита: ${COMMIT_MESSAGE:-$CI_COMMIT_MESSAGE}
+      - 🔑 Short hash: ${COMMIT:-$CI_COMMIT_SHORT_SHA}
+
+      🔗 Ссылки:
+      - 🧟‍♂️ Портал пользователя: $KAMPUS_USER_BASE_URL
+      - 🧑‍💼 Портал администратора: $KAMPUS_ADMIN_BASE_URL
+      - 📊 Allure TestOps: $ALLURE_LAUNCH_URL
+
+      Результаты:
+      - 📌 Всего: $TOTAL
+      - ✅ Пройдено: $PASSED
+      - ❌ Неудачно: $FAILED
+      - ⏭️ Пропущено: $SKIPPED
+      - 🤬 Флаки: $FLAKY"
+      curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" -d "chat_id=${CHAT_ID}" -d "text=${MESSAGE}"
+  artifacts:
+    paths:
+      - $ALLURE_RESULTS/
+      - test-results/
+    when: always
+  allow_failure: true

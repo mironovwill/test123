@@ -1,65 +1,15 @@
 import path from 'node:path';
 import { expect, Page, test } from '@playwright/test';
 import { Button, Checkbox, Input, Select } from '@core/components';
-import { TopicBlockPlanTypes } from '@core/types';
-
-export const enum AnswerTypes {
-  OneAnswer = 'Один вариант ответа',
-  TwoAnswers = 'Несколько вариантов ответа',
-  OpenAnswer = 'Открытый',
-  MatchingAnswers = 'Сопоставление',
-}
-
-interface BasicAnswer {
-  answer: string;
-  correct: boolean;
-  imgUuid?: string;
-}
-
-interface BasicTest {
-  question: string;
-  coverImage?: string;
-  answerType: AnswerTypes.OneAnswer | AnswerTypes.TwoAnswers;
-  answers: BasicAnswer[];
-}
-
-interface OpenedTest {
-  question: string;
-  coverImage?: string;
-  answerType: AnswerTypes.OpenAnswer;
-}
-
-interface MatchingAnswers {
-  left: {
-    content: string | null;
-    image?: string;
-  };
-  right: {
-    content: string | null;
-    image?: string;
-  };
-}
-
-interface MatchingTest {
-  question: string;
-  coverImage?: string;
-  imagesMatching?: boolean;
-  answerType: AnswerTypes.MatchingAnswers;
-  matchingAnswers: MatchingAnswers[];
-}
-
-export type TestEntity = BasicTest | MatchingTest | OpenedTest;
-
-export interface Test {
-  blockPlanName: string;
-  blockPlanType: TopicBlockPlanTypes.TEST;
-  timeout?: string;
-  mixAnswers?: boolean;
-  mixQuestions?: boolean;
-  allowAnswersCount?: string;
-  poll?: boolean;
-  test: TestEntity;
-}
+import {
+  AnswerTypes,
+  BasicTest,
+  MatchingAnswers,
+  MatchingTest,
+  BasicAnswer,
+  Test,
+  TestEntity,
+} from '@core/types';
 
 export class TestFields {
   private readonly selectors = {
@@ -339,7 +289,7 @@ export class TestFields {
   }
 
   private async uploadImage(imageName: string, selector: string) {
-    const imagePath = path.resolve(__dirname, `../../../../assets/${imageName}`);
+    const imagePath = path.resolve(__dirname, `../../../../../helpers/media/${imageName}`);
     await this.page.locator(selector).first().setInputFiles(imagePath);
     await this.topicImageCropSubmitBtn.click();
   }

@@ -4,7 +4,9 @@ import { Input, Select } from '@core/components';
 export class FilesFields {
   private readonly selectors = {
     topicLearningFilesDescriptionInput: this.page.getByTestId('adminTopicLearningFilesDescription'),
-    topicLearningFilesList: this.page.locator('#adminTopicsLearningUploads > div:nth-child(2)'),
+    topicLearningFilesList: this.page.locator(
+      '//div[@id="adminTopicsLearningUploads"]/../../../div[2]',
+    ),
     topicLearningFileUploadInput: this.page.locator('//input[@type="file"]'),
   };
 

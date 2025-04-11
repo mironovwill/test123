@@ -3,8 +3,8 @@ import { Input, Typography } from '@core/components';
 
 export class ArticleFields {
   private readonly selectors = {
-    topicLearningArticleInput: this.page.getByTestId('adminTopicLearningArticleInput'),
-    topicLearningArticleValue: this.page.getByTestId('adminTopicLearningArticleValue'),
+    topicLearningArticleInput: this.page.locator('//div[@data-placeholder="Поле ввода"]'),
+    topicLearningArticleValue: this.page.locator('//div[@data-placeholder="Поле ввода"]/p'),
   };
 
   private readonly blockPlanArticleInput = new Input({

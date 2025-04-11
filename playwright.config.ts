@@ -15,9 +15,9 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 4 : 1,
-  timeout: 500_000,
+  timeout: 60_000,
   expect: {
-    timeout: 120_000,
+    timeout: 30_000,
   },
   outputDir: `${reportDir}/test-results`,
   reporter: [

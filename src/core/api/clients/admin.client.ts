@@ -280,4 +280,8 @@ export class AdminApiClient extends ApiClient {
   async getUserDepartments(): Promise<string[]> {
     return await this.get(adminApiConfig.endpoints.user.department);
   }
+
+  async deleteBlockById(blockId: number): Promise<APIResponse> {
+    return await this.delete(adminApiConfig.endpoints.block.byId(blockId));
+  }
 }
