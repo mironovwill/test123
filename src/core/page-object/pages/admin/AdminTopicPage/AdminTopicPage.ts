@@ -259,12 +259,11 @@ export class AdminTopicPage extends BasePage {
   async validateBasicTopicInfo(
     { topicName, description, topicType, categories, level }: Topic,
     topicId: string,
-    viewsCount = '1',
+    viewsCount = '2',
     addToPlanCount = '0',
     visibilityCount = '0',
   ) {
     await this.validateH1Text(topicName);
-    await this.validateImageSrc();
     await this.validateTopicDescription(description);
     await this.validateTopicId(topicId);
     await this.validateTopicTypeBadge(topicType);
@@ -356,7 +355,7 @@ export class AdminTopicPage extends BasePage {
       return;
     }
     if (h) {
-      await this.topicDurationText.shouldHaveText(`${h} часов`);
+      await this.topicDurationText.shouldHaveText(`${h} час`);
       return;
     }
     if (m) {

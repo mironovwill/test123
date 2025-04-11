@@ -1,6 +1,7 @@
 import { generateTestData, userGenerator, generateUsers } from '@core/api/generators';
 import { AdminApiClient } from '@core/api/clients/admin.client';
-import { writeTestData } from './writeTestData';
+import { writeTestData } from '@core/helpers';
+import { generateTopicsTestData } from '@core/api/generators/topics-test-data.generator';
 
 const PATCH = 'src/config/test-data.json';
 
@@ -27,6 +28,8 @@ export async function bootstrapTestData() {
 
   // Создание структур и пользователей
   const initialStructures = await generateTestData(adminApiClient);
+  const initialTopics = await generateTopicsTestData(adminApiClient);
+
   const testData = {
     structures: initialStructures,
     users: await generateUsers(adminApiClient, {
@@ -35,6 +38,9 @@ export async function bootstrapTestData() {
       position: +initialStructures.reward.id,
       managerId: superadminId,
     }),
+    topics: {
+      ...initialTopics,
+    },
   };
 
   // Блокировка тестового пользователя

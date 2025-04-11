@@ -22,12 +22,32 @@ export const generateTestData = async (adminApiClient: AdminApiClient) => {
   const [template] = await adminApiClient.getCertificateTemplates();
   const templateId = template.id;
 
-  const [functionInternal, department, reward, certificate, author] = await Promise.all([
+  const [
+    functionInternal,
+    department,
+    reward,
+    certificate,
+    author,
+    topicCategories,
+    authors,
+    levels,
+    languages,
+    bookAddress,
+    tags,
+    skills,
+  ] = await Promise.all([
     adminApiClient.createFunction(functionGenerator()),
     adminApiClient.createDepartment(departmentGenerator()),
     adminApiClient.createReward(rewardGenerator()),
     adminApiClient.createCertificate(certificateGenerator(+templateId)),
     adminApiClient.createAuthor(authorGenerator()),
+    adminApiClient.getTopicCategories(),
+    adminApiClient.getAuthors(),
+    adminApiClient.getTopicLevels(),
+    adminApiClient.getLanguages(),
+    adminApiClient.getBooksAddress(),
+    adminApiClient.getTags(),
+    adminApiClient.getSkills(),
   ]);
 
   return {
@@ -36,5 +56,12 @@ export const generateTestData = async (adminApiClient: AdminApiClient) => {
     reward,
     certificate,
     author,
+    topicCategories,
+    authors,
+    levels,
+    languages,
+    bookAddress,
+    tags,
+    skills,
   };
 };

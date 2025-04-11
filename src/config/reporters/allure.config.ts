@@ -9,7 +9,7 @@ export const allureConfig = {
   links: {
     issue: {
       nameTemplate: 'Issue #%s',
-      urlTemplate: 'https://kampus.atlassian.net/browse/%s',
+      urlTemplate: 'https://kampus.atlassian.net/browse/KAM-%s',
     },
     tms: {
       nameTemplate: 'TMS #%s',

@@ -1,7 +1,8 @@
 import { faker } from '@faker-js/faker/locale/ru';
+import { getTomorrowDay } from '@core/helpers';
 import testData from '@test-data';
 
-export const bookPayload = () => {
+export const eCoursePayload = () => {
   const link = faker.internet.url();
 
   return {
@@ -11,23 +12,13 @@ export const bookPayload = () => {
         name: testData.structures.authors[0].name,
       },
     ],
-    addressBook: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressBook: [],
     addressesDelete: [],
-    addressesAdd: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressesAdd: [],
     tagNames: [testData.structures.tags[0].name],
     skillNames: [testData.structures.skills[0].name],
     qiwi: false,
-    qiwiLibrary: true,
+    qiwiLibrary: false,
     errors: '',
     dates: [],
     scope: 'INTERNAL',
@@ -37,23 +28,22 @@ export const bookPayload = () => {
     imageSrc: '',
     eventName: 'Конференция',
     languageId: 1,
-    typeLabelId: 7,
+    typeLabelId: 5,
     hasCertificate: true,
     certificateRequest: {
       id: testData.structures.certificate.id,
-      series: '1',
-      minNumber: '100',
-      maxNumber: '1000',
+      series: '100',
+      minNumber: '1000',
+      maxNumber: '2000',
     },
     qiwiLibraryError: false,
-    hasBadge: true,
+    hasBadge: false,
     withSchedule: false,
-    typeId: 16,
+    name: faker.book.title(),
+    typeId: 1,
     subTypeId: null,
     comment: null,
     formChange: true,
-    publisher: faker.lorem.words({ min: 5, max: 15 }),
-    name: faker.book.title(),
     description: faker.lorem.words({ min: 5, max: 15 }),
     categoryIds: [testData.structures.topicCategories[0].id],
     levelId: testData.structures.levels[0].id,
@@ -63,11 +53,12 @@ export const bookPayload = () => {
         url: link,
       },
     ],
-    addressBookVisible: true,
-    changeAddressList: true,
-    cost: faker.number.int({ min: 100, max: 1000 }),
-    issued: '1999-01-01',
+    topicClassId: 1,
+    startDate: getTomorrowDay({ formattedDate: true }).split('.').reverse().join('-'),
+    startTime: '21:00:00',
     duration: 60,
+    publisher: faker.lorem.words({ min: 5, max: 15 }),
+    meetPlace: faker.lorem.words({ min: 5, max: 15 }),
     tags: [
       {
         id: testData.structures.tags[0].id,

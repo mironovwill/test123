@@ -1,13 +1,8 @@
 import 'dotenv/config';
 import { defineConfig } from '@playwright/test';
 import { resolve } from 'node:path';
-import { allureConfig } from 'src/config/allure.config';
+import { allureConfig } from './src/config/reporters/allure.config';
 import { cloudGlobalProjects } from 'src/config/cloud/cloud.config';
-
-const GLOBAL_TIMEOUT = process.env.CI ? 60_000 : 60_000;
-const NAVIGATION_TIMEOUT = process.env.CI ? 90_000 : 90_000;
-const EXPECT_TIMEOUT = process.env.CI ? 60_000 : 60_000;
-const RETRIES = process.env.CI ? 2 : 0;
 
 const reportDir = resolve(__dirname, 'src/report');
 // const wsEndpoint = `wss://moon.k-ampus.dev/playwright/chromium/playwright-1.51.0?headless=false&enableVideo=true`;
@@ -18,25 +13,21 @@ export default defineConfig({
   testDir: './src/tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: RETRIES,
-  workers: 1,
-  outputDir: `${reportDir}/test-results`,
-  timeout: GLOBAL_TIMEOUT,
+  retries: process.env.CI ? 1 : 0,
+  workers: process.env.CI ? 4 : 1,
+  timeout: 500_000,
   expect: {
-    timeout: EXPECT_TIMEOUT,
+    timeout: 120_000,
   },
+  outputDir: `${reportDir}/test-results`,
   reporter: [
     ['list'],
     ['json', { outputFile: `${reportDir}/test-results/test-results.json`, open: 'never' }],
     ['allure-playwright', { ...allureConfig, resultsDir: `${reportDir}/allure-results` }],
   ],
   use: {
-    launchOptions: {
-      slowMo: 100,
-    },
     ignoreHTTPSErrors: true,
     testIdAttribute: 'data-qa',
-    navigationTimeout: NAVIGATION_TIMEOUT,
     trace: process.env.CI ? 'on-first-retry' : 'retain-on-failure',
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',

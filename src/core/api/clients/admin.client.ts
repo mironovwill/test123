@@ -19,6 +19,60 @@ import {
   AuthorResponse,
 } from '../types';
 
+type TopicCategoryResponse = {
+  id: number;
+  name: string;
+  [key: string]: unknown;
+};
+
+type TopicLevelResponse = {
+  id: number;
+  name: string;
+};
+
+type LanguageResponse = {
+  id: number;
+  name: string;
+  [key: string]: unknown;
+};
+
+type AuthorsResponse = {
+  id: number;
+  name: string;
+  visible: boolean;
+  [key: string]: unknown;
+};
+
+type TopicResponse = {
+  id: number;
+  [key: string]: unknown;
+};
+
+type BookAddress = {
+  id: number;
+  address: string;
+};
+
+type BookAddressResponse = {
+  content: BookAddress[];
+};
+
+type TagResponse = {
+  id: number;
+  name: string;
+  [key: string]: unknown;
+};
+
+type Skill = {
+  id: number;
+  name: string;
+  [key: string]: unknown;
+};
+
+type SkillResponse = {
+  content: Skill[];
+};
+
 /**
  * Клиент для работы с административным API.
  * Предоставляет методы для создания, удаления и управления сущностями.
@@ -49,7 +103,7 @@ export class AdminApiClient extends ApiClient {
   /**
    * Создает нового автора.
    * @param author - Данные для создания автора.
-   * @returns {Author} Созданный автор.
+   * @returns {AuthorDto} Созданный автор.
    */
   async createAuthor(author: AuthorDto): Promise<AuthorResponse> {
     return await this.post(adminApiConfig.endpoints.authors.base, author);
@@ -163,5 +217,59 @@ export class AdminApiClient extends ApiClient {
    */
   async deleteTopicById(topicId: number): Promise<APIResponse> {
     return await this.delete(adminApiConfig.endpoints.topics.byId(topicId));
+  }
+
+  /**
+   * Получает список всех категорий.
+   * @returns {TopicCategoryResponse[]} Массив категорий.
+   */
+  async getTopicCategories(): Promise<TopicCategoryResponse[]> {
+    return await this.get(adminApiConfig.endpoints.topics.category);
+  }
+
+  /**
+   * Получает список всех уровней.
+   * @returns {TopicLevelResponse[]} Массив уровней.
+   */
+  async getTopicLevels(): Promise<TopicLevelResponse[]> {
+    return await this.get(adminApiConfig.endpoints.topics.level);
+  }
+
+  /**
+   * Получает список всех языков.
+   * @returns {LanguageResponse[]} Массив языков.
+   */
+  async getLanguages(): Promise<LanguageResponse[]> {
+    return await this.get(adminApiConfig.endpoints.language.base);
+  }
+
+  /**
+   * Получает список всех авторов.
+   * @returns {AuthorsResponse[]} Массив авторов.
+   */
+  async getAuthors(): Promise<AuthorsResponse[]> {
+    return await this.get(adminApiConfig.endpoints.authors.base);
+  }
+
+  async createTopic(topic: Record<string, unknown>): Promise<TopicResponse> {
+    return await this.post(adminApiConfig.endpoints.topics.base, topic);
+  }
+
+  async changeTopicVisibility(topicId: number, visible?: boolean): Promise<APIResponse> {
+    return await this.put(adminApiConfig.endpoints.topics.visibility(topicId, visible));
+  }
+
+  async getBooksAddress(): Promise<BookAddress[]> {
+    const response = await this.get<BookAddressResponse>(adminApiConfig.endpoints.book.address);
+    return response.content;
+  }
+
+  async getTags(): Promise<TagResponse[]> {
+    return await this.get(adminApiConfig.endpoints.tags.base);
+  }
+
+  async getSkills(): Promise<Skill[]> {
+    const response = await this.get<SkillResponse>(adminApiConfig.endpoints.skills.base);
+    return response.content;
   }
 }

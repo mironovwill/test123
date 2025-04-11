@@ -1,7 +1,8 @@
 import { faker } from '@faker-js/faker/locale/ru';
+import { getTomorrowDay } from '@core/helpers';
 import testData from '@test-data';
 
-export const bookPayload = () => {
+export const eventWithValidationPayload = () => {
   const link = faker.internet.url();
 
   return {
@@ -11,49 +12,48 @@ export const bookPayload = () => {
         name: testData.structures.authors[0].name,
       },
     ],
-    addressBook: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressBook: [],
     addressesDelete: [],
-    addressesAdd: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressesAdd: [],
     tagNames: [testData.structures.tags[0].name],
     skillNames: [testData.structures.skills[0].name],
     qiwi: false,
-    qiwiLibrary: true,
+    qiwiLibrary: false,
     errors: '',
-    dates: [],
+    dates: [
+      {
+        startDate: getTomorrowDay({ formattedDate: true }).split('.').reverse().join('-'),
+        startTime: '20:00:00',
+        endTime: '21:00:00',
+        place: faker.lorem.words({ min: 5, max: 15 }),
+      },
+    ],
     scope: 'INTERNAL',
     statusScope: true,
     confirmVisible: '',
     confirmCloseCreate: false,
     imageSrc: '',
-    eventName: 'Конференция',
+    eventName: faker.lorem.words({ min: 5, max: 15 }),
     languageId: 1,
-    typeLabelId: 7,
+    typeLabelId: 6,
     hasCertificate: true,
     certificateRequest: {
-      id: testData.structures.certificate.id,
+      id: 104,
       series: '1',
-      minNumber: '100',
-      maxNumber: '1000',
+      minNumber: '1',
+      maxNumber: '200',
     },
     qiwiLibraryError: false,
-    hasBadge: true,
+    hasBadge: false,
     withSchedule: false,
-    typeId: 16,
-    subTypeId: null,
-    comment: null,
-    formChange: true,
-    publisher: faker.lorem.words({ min: 5, max: 15 }),
     name: faker.book.title(),
+    typeId: 23,
+    webinarPlatform: '1',
+    entryPlatform: '1',
+    webinarType: 'WEBINAR',
+    duration: 125,
+    approved: true,
+    formChange: true,
     description: faker.lorem.words({ min: 5, max: 15 }),
     categoryIds: [testData.structures.topicCategories[0].id],
     levelId: testData.structures.levels[0].id,
@@ -63,11 +63,10 @@ export const bookPayload = () => {
         url: link,
       },
     ],
-    addressBookVisible: true,
-    changeAddressList: true,
-    cost: faker.number.int({ min: 100, max: 1000 }),
-    issued: '1999-01-01',
-    duration: 60,
+    cost: 100,
+    publisher: faker.company.name(),
+    participantsCount: faker.number.int({ min: 1, max: 1000 }),
+    comment: faker.lorem.words({ min: 5, max: 15 }),
     tags: [
       {
         id: testData.structures.tags[0].id,
@@ -81,6 +80,7 @@ export const bookPayload = () => {
       },
     ],
     webinarCreateEventRequest: [],
+    subTypeId: null,
     authorNames: [testData.structures.authors[0].name],
   };
 };

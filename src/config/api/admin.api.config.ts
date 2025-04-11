@@ -28,10 +28,25 @@ const adminApiConfig = {
     topics: {
       base: '/topic',
       byId: (id: number) => `/topic/${id}`,
+      category: '/topic/category?isGlobal=false',
+      level: '/topic/level',
+      visibility: (id: number, isVisible = false) => `/topic/${id}/visible?isVisible=${isVisible}`,
     },
     authors: {
       base: '/author',
       byId: (id: number) => `/author?id=${id}`,
+    },
+    language: {
+      base: '/language',
+    },
+    book: {
+      address: '/book/address',
+    },
+    tags: {
+      base: '/tag',
+    },
+    skills: {
+      base: '/skill',
     },
   },
 };

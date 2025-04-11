@@ -1,33 +1,18 @@
 import { faker } from '@faker-js/faker/locale/ru';
 import testData from '@test-data';
 
-export const bookPayload = () => {
+export const applicationPayload = () => {
   const link = faker.internet.url();
 
   return {
-    authors: [
-      {
-        id: testData.structures.authors[0].id,
-        name: testData.structures.authors[0].name,
-      },
-    ],
-    addressBook: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    authors: [],
+    addressBook: [],
     addressesDelete: [],
-    addressesAdd: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressesAdd: [],
     tagNames: [testData.structures.tags[0].name],
     skillNames: [testData.structures.skills[0].name],
     qiwi: false,
-    qiwiLibrary: true,
+    qiwiLibrary: false,
     errors: '',
     dates: [],
     scope: 'INTERNAL',
@@ -37,7 +22,7 @@ export const bookPayload = () => {
     imageSrc: '',
     eventName: 'Конференция',
     languageId: 1,
-    typeLabelId: 7,
+    typeLabelId: 14,
     hasCertificate: true,
     certificateRequest: {
       id: testData.structures.certificate.id,
@@ -46,13 +31,12 @@ export const bookPayload = () => {
       maxNumber: '1000',
     },
     qiwiLibraryError: false,
-    hasBadge: true,
+    hasBadge: false,
     withSchedule: false,
-    typeId: 16,
+    typeId: 5,
     subTypeId: null,
     comment: null,
     formChange: true,
-    publisher: faker.lorem.words({ min: 5, max: 15 }),
     name: faker.book.title(),
     description: faker.lorem.words({ min: 5, max: 15 }),
     categoryIds: [testData.structures.topicCategories[0].id],
@@ -63,10 +47,7 @@ export const bookPayload = () => {
         url: link,
       },
     ],
-    addressBookVisible: true,
-    changeAddressList: true,
     cost: faker.number.int({ min: 100, max: 1000 }),
-    issued: '1999-01-01',
     duration: 60,
     tags: [
       {
@@ -81,6 +62,6 @@ export const bookPayload = () => {
       },
     ],
     webinarCreateEventRequest: [],
-    authorNames: [testData.structures.authors[0].name],
+    authorNames: [],
   };
 };

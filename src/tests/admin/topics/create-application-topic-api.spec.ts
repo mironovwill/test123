@@ -1,17 +1,29 @@
 import { appFixture as test } from '@core/fixtures';
 import { epic, feature } from 'allure-js-commons';
-import { applicationTopicInfo } from './test-data';
+import testData from '@test-data';
+import { ApplicationTopic, TopicTypes } from '@core/types';
 
 test.describe(
   'Создание и проверка топика с типом "Приложение"',
   { tag: ['@Smoke', '@Admin', '@Приложение'] },
   () => {
-    let topicId: string;
+    const topicId = String(testData.topics.applicationTopic.id);
 
-    test.beforeEach(async ({ createTopicByUI }) => {
+    const applicationTopicInfo = {
+      topicName: testData.topics.applicationTopic.name,
+      description: testData.topics.applicationTopic.description,
+      topicType: TopicTypes.APPLICATION,
+      categories: testData.topics.applicationTopic.categories.map(category => category.name),
+      language: testData.topics.applicationTopic.language.name,
+      level: testData.topics.applicationTopic.level.name,
+      cost: String(testData.topics.applicationTopic.cost),
+      durationH: String(testData.topics.applicationTopic.duration / 60),
+    } as ApplicationTopic;
+
+    test.beforeEach(async ({ adminTopicPage }) => {
       await epic('Панель администратора');
       await feature('Создание и проверка топиков');
-      topicId = await createTopicByUI(applicationTopicInfo);
+      await adminTopicPage.visitTopic(topicId);
     });
 
     test('Создание и проверка топика с типом "Приложение" @allure.id=173', async ({
@@ -23,10 +35,7 @@ test.describe(
         await adminTopicPage.validateBasicTopicInfo(applicationTopicInfo, topicId);
         await adminTopicPage.validateAdditionalTopicInfo(applicationTopicInfo);
         await adminTopicPage.validateTopicCost(applicationTopicInfo.cost);
-        await adminTopicPage.validateTopicDuration(
-          applicationTopicInfo.durationH,
-          applicationTopicInfo.durationM,
-        );
+        await adminTopicPage.validateTopicDuration(applicationTopicInfo.durationH);
       });
 
       await test.step('Проверка поиска созданного топика', async () => {

@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker/locale/ru';
 import testData from '@test-data';
 
-export const bookPayload = () => {
+export const articlePayload = () => {
   const link = faker.internet.url();
 
   return {
@@ -11,23 +11,13 @@ export const bookPayload = () => {
         name: testData.structures.authors[0].name,
       },
     ],
-    addressBook: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressBook: [],
     addressesDelete: [],
-    addressesAdd: [
-      {
-        id: testData.structures.bookAddress[0].id,
-        name: testData.structures.bookAddress[0].address,
-      },
-    ],
+    addressesAdd: [],
     tagNames: [testData.structures.tags[0].name],
     skillNames: [testData.structures.skills[0].name],
     qiwi: false,
-    qiwiLibrary: true,
+    qiwiLibrary: false,
     errors: '',
     dates: [],
     scope: 'INTERNAL',
@@ -37,7 +27,7 @@ export const bookPayload = () => {
     imageSrc: '',
     eventName: 'Конференция',
     languageId: 1,
-    typeLabelId: 7,
+    typeLabelId: 8,
     hasCertificate: true,
     certificateRequest: {
       id: testData.structures.certificate.id,
@@ -46,28 +36,24 @@ export const bookPayload = () => {
       maxNumber: '1000',
     },
     qiwiLibraryError: false,
-    hasBadge: true,
+    hasBadge: false,
     withSchedule: false,
-    typeId: 16,
-    subTypeId: null,
-    comment: null,
-    formChange: true,
-    publisher: faker.lorem.words({ min: 5, max: 15 }),
     name: faker.book.title(),
     description: faker.lorem.words({ min: 5, max: 15 }),
     categoryIds: [testData.structures.topicCategories[0].id],
+    typeId: 15,
+    subTypeId: null,
+    comment: null,
+    formChange: true,
     levelId: testData.structures.levels[0].id,
+    issued: '1111-01-01',
+    duration: 60,
     links: [
       {
         name: link,
         url: link,
       },
     ],
-    addressBookVisible: true,
-    changeAddressList: true,
-    cost: faker.number.int({ min: 100, max: 1000 }),
-    issued: '1999-01-01',
-    duration: 60,
     tags: [
       {
         id: testData.structures.tags[0].id,

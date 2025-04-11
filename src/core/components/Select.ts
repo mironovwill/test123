@@ -73,7 +73,7 @@ export class Select extends Component {
    * @returns {Promise<void>}
    */
   async assertSelectIncludesItems(expectedItems: string[]): Promise<void> {
-    await test.step(`${this.typeOfUpper} "${this.componentName}" должен(а) содержать элементы: [${expectedItems.join(', ')}]`, async () => {
+    await test.step(`${this.typeOfUpper} "${this.componentName}" должен(а) содержать элементы: [${expectedItems?.join(', ') || ''}]`, async () => {
       const itemsLocator = this.locator.locator('> *');
 
       const actualItems = await itemsLocator.allTextContents();

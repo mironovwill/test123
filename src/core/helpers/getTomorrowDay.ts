@@ -1,4 +1,6 @@
-export function getTomorrowDay(formattedDate = false): string {
+export function getTomorrowDay({
+  formattedDate = false,
+}: { formattedDate?: boolean } = {}): string {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
 

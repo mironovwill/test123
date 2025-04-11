@@ -61,4 +61,24 @@ export default async function globalTeardown() {
   } catch (error) {
     console.error(`👨💻❌ Ошибка при удалении автора:`, error);
   }
+
+  try {
+    await Promise.all(
+      testData.topics.topicsIds.map(async topicId => {
+        await adminApiClient.deleteTopicById(topicId);
+        console.log(`📚➡️🗑️ Топик с id:${topicId} удален`);
+      }),
+    );
+  } catch (error) {
+    console.error(`📚❌ Ошибка при удалении топика:`, error);
+  }
+
+  // Удаление файла с тестовыми данными
+  // try {
+  //   const filePath = 'src/tests/test-data.json';
+  //   await fs.unlink(filePath);
+  //   console.log(`📁➡️🗑️ Файл удален`);
+  // } catch (error) {
+  //   console.error(`📁❌ Ошибка при удалении файла:`, error);
+  // }
 }
